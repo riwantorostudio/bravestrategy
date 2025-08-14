@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+
+  <!-- Primary Meta Tags -->
+  <title>Brave Strategy | Integrated Security & Parking Services - Indonesia & International</title>
+  <meta name="description" content="Brave Strategy delivers expert security and parking solutions in Indonesia and worldwide. From trained personnel to valet systems and risk consulting, we ensure safety and efficiency for your business.">
+  <meta name="keywords" content="security services Indonesia, international security company, valet parking Indonesia, parking management system, CCTV installation, risk consulting, corporate security solutions, event security, Brave Strategy, global security partner">
+  <meta name="author" content="Brave Strategy">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://thebravestrategy.com/">
+
+   <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Brave Strategy | Security & Parking Services - Indonesia & International">
+  <meta property="og:description" content="Professional and integrated security and parking services across Indonesia and globally. Trusted by businesses for excellence and speed.">
+  <meta property="og:image" content="https://thebravestrategy.com/assets/app-icons/logo.png">
+  <meta property="og:url" content="https://thebravestrategy.com/">
+  <meta property="og:site_name" content="Brave Strategy">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Brave Strategy | Security & Parking Services - Indonesia & International">
+  <meta name="twitter:description" content="Brave Strategy provides professional, fast-response security and parking services across Indonesia and worldwide.">
+  <meta name="twitter:image" content="https://thebravestrategy.com/assets/app-icons/logo.png">
+
+  
+  <!-- Structured Data (Schema.org JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Brave Strategy",
+    "url": "https://thebravestrategy.com",
+    "logo": "https://thebravestrategy.com/assets/app-icons/logo.png",
+    "description": "Brave Strategy is a leading provider of integrated security, valet parking, and risk management services, serving Indonesia and international clients.",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+628170278686",
+      "contactType": "Customer Service",
+      "areaServed": ["ID", "SG", "MY", "AU", "US", "Global"],
+      "availableLanguage": ["English", "Indonesian"]
+    },
+    "sameAs": [
+      "https://www.facebook.com/thebravestrategy",
+      "https://www.instagram.com/brave_strategy",
+      "https://www.linkedin.com/company/thebravestrategy"
+    ]
+  }
+  </script>
+
+    <!-- Webmanifest + Favicon / App icons -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" href="assets/app-icons/logo.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="assets/app-icons/logo.png">
+        
+    <!-- Theme switcher (color modes) -->
+    <script src="assets/js/theme-switcher.js"></script>
+
+    <!-- Import Google font (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" id="google-font">
+
+    <!-- Vendor styles -->
+    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" media="screen" href="assets/vendor/lightgallery/css/lightgallery-bundle.min.css">
+    <link rel="stylesheet" media="screen" href="assets/vendor/aos/dist/aos.css">
+
+    <!-- Font icons -->
+    <link rel="stylesheet" href="assets/icons/around-icons.min.css">
+
+    <!-- Theme styles + Bootstrap -->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+
+    <!-- Page loading styles -->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      [data-bs-theme="dark"] .page-loading {
+        background-color: #121519;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-family: "Inter", sans-serif;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #6f788b;
+      }
+      [data-bs-theme="dark"] .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        background-color: #d7dde2; 
+        border-radius: 50%;
+        opacity: 0;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      [data-bs-theme="dark"] .page-spinner {
+        background-color: rgba(255,255,255,.25);
+      }
+      @-webkit-keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+      @keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+      html {
+        scroll-behavior: smooth;  /* Efek scroll halus */
+      }
+
+      :target {
+        scroll-margin-top: 80px;  /* Sesuaikan dengan tinggi navbar Anda */
+      }
+    </style>
+
+    <!-- Page loading scripts -->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading')
+          preloader.classList.remove('active')
+          setTimeout(function () {
+            preloader.remove()
+          }, 1500)
+        }
+      })()
+    </script>
+  </head>
+
+
+  <!-- Body -->
+  <body class="bg-secondary">
+
+
+    <!-- Page loading spinner -->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div>
+        <span>Loading...</span>
+      </div>
+    </div>
+
+
+    <!-- Page wrapper -->
+    <main class="page-wrapper">
+
+      <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page -->
+      <header class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+
+          <!-- Navbar brand (Logo) -->
+          <a class="navbar-brand pe-sm-3" href="index.html">
+            <img style="padding-right: 8px;" src="assets/img/landing/business-consulting/logo.png" alt="The Brave Strategy" width="35" height="32">
+            
+          </a>
+
+          <!-- Theme switcher -->
+          <div class="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto" data-bs-toggle="mode">
+            <input class="form-check-input" type="checkbox" id="theme-mode">
+            <label class="form-check-label" for="theme-mode">
+              <i class="ai-sun fs-lg"></i>
+            </label>
+            <label class="form-check-label" for="theme-mode">
+              <i class="ai-moon fs-lg"></i>
+            </label>
+          </div>
+
+          <a class="btn btn-info btn-sm fs-sm order-lg-3 d-none d-sm-inline-flex" href="https://wa.me/628170278686?text=Hello,%20I'm%20interested%20in%20your%20services.%20Could%20you%20share%20more%20details?" rel="noopener">
+            <i class="ai-whatsapp"></i>Contact
+          </a>
+
+          <!-- Mobile menu toggler (Hamburger) -->
+          <button class="navbar-toggler ms-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar collapse (Main navigation) -->
+          <nav class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav navbar-nav-scroll me-auto" style="--ar-scroll-height: 520px;">
+              
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#layanankeamanan">Layanan Keamanan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#layananparkir">Layanan Parkir</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#klien">Klien</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#testimony">Testimoni</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog-list.html">Blog</a>
+              </li>
+            </ul>
+            <div class="d-sm-none p-3 mt-n3">
+              <a class="btn btn-info w-100 mb-1" href="https://wa.me/628170278686?text=Hello,%20I'm%20interested%20in%20your%20services.%20Could%20you%20share%20more%20details?" rel="noopener">
+               <i class="ai-whatsapp"></i> Contact
+              </a>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Page container -->
+      <div class="container pt-5 pb-lg-5 pb-md-4 pb-2 my-5">
+
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb">
+          <ol class="pt-lg-3 pb-lg-4 pb-2 breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Blog list no sidebar</li>
+          </ol>
+        </nav>
+
+        
+        <!-- Page title + filters -->
+        <div class="row align-items-center gy-2 mb-4 pb-1 pb-sm-2 pb-lg-3">
+          <div class="col-lg-5">
+            <h1 class="mb-lg-0">Blog list</h1>
+          </div>
+          <div class="col-xl-2 offset-xl-1 col-lg-3 col-sm-5">
+            <select class="form-select">
+              <option>All categories</option>
+              <option>Inspiration</option>
+              <option>Brand strategy</option>
+              <option>Advertisement</option>
+              <option>Ecommerce</option>
+              <option>Travel &amp; Vacation</option>
+            </select>
+          </div>
+          <div class="col-lg-4 col-sm-7">
+            <div class="position-relative">
+              <i class="ai-search position-absolute top-50 start-0 translate-middle-y ms-3"></i>
+              <input class="form-control ps-5" type="search" placeholder="Enter keyword">
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Post -->
+        <article class="row g-0 border-0 mb-4">
+          <a class="col-sm-5 col-lg-4 bg-repeat-0 bg-size-cover bg-position-center rounded-5" href="blog-single-v2.html" style="background-image: url(assets/img/blog/list/01.jpg); min-height: 16rem" aria-label="Post image"></a>
+          <div class="col-sm-7 col-lg-8">
+            <div class="pt-4 pb-sm-4 ps-sm-4 pe-lg-4">
+              <h3>
+                <a href="blog-single-v2.html">Business strategy for a brand of vintage bags</a>
+              </h3>
+              <p class="d-sm-none d-md-block">Morbi et massa fames ac scelerisque sit commodo dignissim faucibus vel quisque proin lectus et massa fames ac scelerisque sit commodo dignissim. Tellus sagittis dolor pellentesque vel porttitor magna aliquet arcu. Interdum risus mauris pulvinar et vel morbi tellus, scelerisque vel metus ...</p>
+              <div class="d-flex flex-wrap align-items-center mt-n2">
+                <a class="nav-link text-body-secondary fs-sm fw-normal p-0 mt-2 me-3" href="#">
+                  6
+                  <i class="ai-share fs-lg ms-1"></i>
+                </a>
+                <a class="nav-link text-body-secondary fs-sm fw-normal d-flex align-items-end p-0 mt-2" href="#">
+                  12
+                  <i class="ai-message fs-lg ms-1"></i>
+                </a>
+                <span class="fs-xs opacity-20 mt-2 mx-3">|</span>
+                <span class="fs-sm text-body-secondary mt-2">8 hours ago</span>
+                <span class="fs-xs opacity-20 mt-2 mx-3">|</span>
+                <a class="badge text-nav fs-xs border mt-2" href="#">Business</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Post -->
+        <article class="row g-0 border-0 pt-3 pt-sm-0 mb-4">
+          <a class="col-sm-5 col-lg-4 bg-repeat-0 bg-size-cover bg-position-center rounded-5" href="blog-single-v2.html" style="background-image: url(assets/img/blog/list/02.jpg); min-height: 16rem" aria-label="Post image"></a>
+          <div class="col-sm-7 col-lg-8">
+            <div class="pt-4 pb-sm-4 ps-sm-4 pe-lg-4">
+              <h3>
+                <a href="blog-single-v2.html">Top books for inspiration</a>
+              </h3>
+              <p class="d-sm-none d-md-block">Sapien ultrices egestas at faucibus eu diam velit diam id amet nibh quam rutrum fermentum diam natoque scelerisque viverra molestie fames. Nulla fringilla arcu justo augue fringilla in nunc volutpat sit. Dui diam, faucibus vitae ultricies vitae mollis nunc elementum. Habitasse porta neque tempor tellus ut ...</p>
+              <div class="d-flex flex-wrap align-items-center mt-n2">
+                <a class="nav-link text-body-secondary fs-sm fw-normal p-0 mt-2 me-3" href="#">
+                  10
+                  <i class="ai-share fs-lg ms-1"></i>
+                </a>
+                <a class="nav-link text-body-secondary fs-sm fw-normal d-flex align-items-end p-0 mt-2" href="#">
+                  4
+                  <i class="ai-message fs-lg ms-1"></i>
+                </a>
+                <span class="fs-xs opacity-20 mt-2 mx-3">|</span>
+                <span class="fs-sm text-body-secondary mt-2">12 hours ago</span>
+                <span class="fs-xs opacity-20 mt-2 mx-3">|</span>
+                <a class="badge text-nav fs-xs border mt-2" href="#">Books</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Post -->
+        <article class="row g-0 border-0 pt-3 pt-sm-0 mb-4">
+          <a class="col-sm-5 col-lg-4 bg-repeat-0 bg-size-cover bg-position-center rounded-5" href="blog-single-v2.html" style="background-image: url(assets/img/blog/list/03.jpg); min-height: 16rem" aria-label="Post image"></a>
+          <div class="col-sm-7 col-lg-8">
+            <div class="pt-4 pb-sm-4 ps-sm-4 pe-lg-4">
+              <h3>
+                <a href="blog-single-v2.html">Destinations to inspire and restore resources</a>
+              </h3>
+              <p class="d-sm-none d-md-block">Sapien ultrices egestas at faucibus eu diam velit diam id amet nibh quam rutrum diam fermentum diam natoque scelerisque viverra molestie fames. Aliquet donec cras amet orci in in neque ut sed diam quis consectetur purus lorem eu, sit. Aliquam eget arcu sed urna feugiat. In integer nisl at dui malesuada ...</p>
+              <div class="d-flex flex-wrap align-items-center mt-n2">
+                <a class="nav-link text-body-secondary fs-sm fw-normal p-0 mt-2 me-3" href="#">
+                  8
+                  <i class="ai-share fs-lg ms-1"></i>
+                </a>
+                <a class="nav-link text-body-secondary fs-sm fw-normal d-flex align-items-end p-0 mt-2" href="#">
+                  5
+                  <i class="ai-message fs-lg ms-1"></i>
+                </a>
+                <span class="fs-xs opacity-20 mt-2 mx-3">|</span>
+                <span class="fs-sm text-body-secondary mt-2">April 25, 2022</span>
+                <span class="fs-xs opacity-20 mt-2 mx-3">|</span>
+                <a class="badge text-nav fs-xs border mt-2" href="#">Travel</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Post -->
+        <article class="row g-0 border-0 pt-3 pt-sm-0 mb-4">
+          <a class="col-sm-5 col-lg-4 bg-repeat-0 bg-size-cover bg-position-center rounded-5" href="blog-single-v2.html" style="background-image: url(assets/img/blog/list/04.jpg); min-height: 16rem" aria-label="Post image"></a>
+          <div class="col-sm-7 col-lg-8">
+            <div class="pt-4 pb-sm-4 ps-sm-4 pe-lg-4">
+              <h3>
+                <a href="blog-single-v2.html">Promotion of an online store from scratch, first sales</a>
+              </h3>
+              <p class="d-sm-none d-md-block">Pharetra in morbi quis is massa maecenas arcu vulputate pulvinar elit non nullage a, duis tortor mi massa ipsum in eu eu eget libero pulvinar elit vulputate. Nunc aliquet scelerisque pellentesque imperdiet tortor elit, dictum. Tristique odio at dignissim viverra aliquet eleifend erat tellus, at arcu, egestas praesent...</p>
+              <div class="d-flex flex-wrap align-items-center mt-n2">
+                <a class="nav-link text-body-secondary fs-sm fw-normal p-0 mt-2 me-3" href="#">
+                  11
+                  <i class="ai-share fs-lg ms-1"></i>
+                </a>
+                <a class="nav-link text-body-secondary fs-sm fw-normal d-flex align-items-end p-0 mt-2" href="#">
+                  3
+                  <i class="ai-message fs-lg ms-1"></i>
+                </a>
+                <span class="fs-xs opacity-20 mt-2 mx-3">|</span>
+                <span class="fs-sm text-body-secondary mt-2">May 12, 2022</span>
+                <span class="fs-xs opacity-20 mt-2 mx-3">|</span>
+                <a class="badge text-nav fs-xs border mt-2" href="#">Marketing</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Post -->
+        <article class="row g-0 border-0 pt-3 pt-sm-0 mb-4">
+          <a class="col-sm-5 col-lg-4 bg-repeat-0 bg-size-cover bg-position-center rounded-5" href="blog-single-v2.html" style="background-image: url(assets/img/blog/list/05.jpg); min-height: 16rem" aria-label="Post image"></a>
+          <div class="col-sm-7 col-lg-8">
+            <div class="pt-4 pb-sm-4 ps-sm-4 pe-lg-4">
+              <h3><a href="blog-single-v2.html">New series from Netflix</a></h3>
+              <p class="d-sm-none d-md-block">Egestas in neque scelerisque semper sit at eu cursus faucibus velit cras at aliquam sed dictum at at orci curabitur dictumst viverra non pharetra etiam non, vitae tristique eu in morbi felis nulla. Tellus sagittis dolor pellentesque vel porttitor magna aliquet arcu. Interdum risus mauris pulvinar et vel morbi ...</p>
+              <div class="d-flex flex-wrap align-items-center mt-n2">
+                <a class="nav-link text-body-secondary fs-sm fw-normal p-0 mt-2 me-3" href="#">
+                  19
+                  <i class="ai-share fs-lg ms-1"></i>
+                </a>
+                <a class="nav-link text-body-secondary fs-sm fw-normal d-flex align-items-end p-0 mt-2" href="#">
+                  7
+                  <i class="ai-message fs-lg ms-1"></i>
+                </a>
+                <span class="fs-xs opacity-20 mt-2 mx-3">|</span>
+                <span class="fs-sm text-body-secondary mt-2">December 15, 2022</span>
+                <span class="fs-xs opacity-20 mt-2 mx-3">|</span>
+                <a class="badge text-nav fs-xs border mt-2" href="#">TV shows</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Pagination -->
+        <div class="row gy-3 align-items-center mt-lg-5 pt-2 pt-md-3 pt-lg-0 mb-md-2 mb-xl-4">
+          <div class="col col-md-4 col-6 order-md-1 order-1">
+            <div class="d-flex align-items-center"><span class="text-body-secondary fs-sm">Show</span>
+              <select class="form-select form-select-flush w-auto">
+                <option value="6">6</option>
+                <option value="9" selected>9</option>
+                <option value="12">12</option>
+                <option value="24">24</option>
+              </select>
+            </div>
+          </div>
+          <div class="col col-md-4 col-12 order-md-2 order-3 text-center">
+            <button class="btn btn-primary w-md-auto w-100" type="button">Load more posts</button>
+          </div>
+          <div class="col col-md-4 col-6 order-md-3 order-2">
+            <nav aria-label="Page navigation">
+              <ul class="pagination pagination-sm justify-content-end">
+                <li class="page-item active" aria-current="page">
+                  <span class="page-link">1<span class="visually-hidden">(current)</span></span>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    
+    
+
+
+    <!-- Footer -->
+    <footer class="footer pt-lg-5 pt-4 pb-5">
+      <div class="container position-relative z-2 pt-4 pt-md-2 pt-xl-4 pt-xxl-5">
+        <div class="row py-md-3 mb-4 mb-md-5">
+          <div class="col-md-7 col-lg-6 col-xxl-5 mb-sm-4 mb-md-0">
+            <h2 class="display-4 mb-4 mb-md-5">Mari mulai wujudkan sistem keamanan dan parkir terbaik untuk bisnis Anda</h2>
+            <div class="d-sm-flex align-items-center"><a class="btn btn-lg btn-primary me-sm-3 me-lg-4" href="https://wa.me/628170278686?text=Hello,%20I'm%20interested%20in%20your%20services.%20Could%20you%20share%20more%20details?">Let's work together</a>
+              <p class="text-body fs-sm py-3 py-sm-0 ps-sm-2 mb-0">Tim kami akan segera menghubungi Anda untuk mendiskusikan kebutuhan lapangan dan menyiapkan tim terbaik sesuai proyek Anda.</p>
+            </div>
+          </div>
+          <div class="col-md-5 offset-lg-1 offset-xxl-2 d-flex flex-column">
+            <div class="nav mx-n2 mx-lg-n4 mb-2 mb-sm-3">
+              <a class="nav-link text-primary px-2 px-lg-4" href="mailto:example@email.com">Bais@thebravestrategy.com</a>
+              <a class="nav-link px-3 px-lg-4" href="#">Privay policy</a>
+            </div>
+            <div class="nav flex-column mb-3 mb-sm-4">
+              <a class="nav-link py-1 px-0">Jl. Perintis Kemerdekaan 1 No. 6 RT.005/RW.003, Kel. Babakan, Kec. Tangerang, Kota Tangerang, Banten 15118</a>
+              <a class="nav-link py-1 px-0" href="tel:+628170278686">+628170278686</a>
+            </div>
+            <div class="nav mx-n2 mt-auto">
+              <a class="nav-link py-1 px-2 me-2" href="https://www.instagram.com/brave_strategy/">Instagram</a>
+              <a class="nav-link py-1 px-2 me-2" href="#">Facebook</a>
+              <a class="nav-link py-1 px-2 me-2" href="#">X</a>
+            </div>
+          </div>
+        </div>
+        <p class="nav fs-sm pt-3 pb-2 pb-lg-0 mb-0">
+          <span class="text-body-secondary">&copy; All rights reserved. Made by</span>
+          <a class="nav-link d-inline fw-normal p-0 ms-1" rel="noopener">TheBraveStrategy</a>
+        </p>
+      </div>
+    </footer>
+
+
+    <!-- Back to top button -->
+    <a class="btn-scroll-top" href="#top" data-scroll aria-label="Scroll back to top">
+      <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></circle>
+      </svg>
+      <i class="ai-arrow-up"></i>
+    </a>
+
+
+    <!-- Bootstrap + Theme scripts -->
+    <script src="assets/js/theme.min.js"></script>
+  </body>
+
+<!-- Mirrored from stackbros.in/around/blog-list.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Jul 2025 01:57:14 GMT -->
+</html>
