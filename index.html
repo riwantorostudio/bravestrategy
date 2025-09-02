@@ -204,12 +204,15 @@
     <main class="page-wrapper">
 
       <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page -->
-      <header class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
+      <header data-bs-theme="dark">
+
+        <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page -->
+        <div class="navbar navbar-expand-lg fixed-top">
+          <div class="container">
 
           <!-- Navbar brand (Logo) -->
           <a class="navbar-brand pe-sm-3" href="index.html">
-            <img style="padding-right: 8px;" src="assets/img/landing/business-consulting/logo.png" alt="The Brave Strategy" width="35" height="32">
+            <img style="padding-right: 8px;" src="assets/img/landing/business-consulting/logofont.png" alt="The Brave Strategy" width="80" height="32">
             
           </a>
 
@@ -238,10 +241,7 @@
             <ul class="navbar-nav navbar-nav-scroll me-auto" style="--ar-scroll-height: 520px;">
               
               <li class="nav-item">
-                <a class="nav-link" href="#layanankeamanan">Layanan Keamanan</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#layananparkir">Layanan Parkir</a>
+                <a class="nav-link" href="#services">Our Services</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#gallery">Gallery</a>
@@ -249,9 +249,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="#klien">Klien</a>
               </li>
-              <li class="nav-item">
+             <!--<li class="nav-item">
                 <a class="nav-link" href="#testimony">Testimoni</a>
-              </li>
+              </li>--> 
               <li class="nav-item">
                 <a class="nav-link" href="blog-list.html">Blog</a>
               </li>
@@ -263,34 +263,68 @@
             </div>
           </nav>
         </div>
+        </div>
       </header>
 
 
-      <!-- Hero -->
-      <section class="overflow-hidden">
-        <div class="container pt-2 pt-sm-4 pb-sm-2 pb-md-4 py-xl-5 mt-5">
-          <div class="row align-items-center py-5 mt-md-2 my-lg-3 my-xl-4 my-xxl-5">
-            <div class="col-lg-7 order-lg-2 d-flex justify-content-center justify-content-lg-end mb-4 mb-md-5 mb-lg-0 pb-3 pb-md-0">
-              <div class="parallax me-lg-n4 me-xl-n5" style="max-width: 667px;">
-                <div class="parallax-layer" data-depth="0.1">
-                  <img src="assets/img/landing/business-consulting/hero/01.jpg" alt="Layer">
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-5 order-lg-1">
-              <h1 class="display-3 text-center text-lg-start pb-sm-2 pb-md-3">BRAVE STRATEGY</h1>
-              <p class="fs-lg text-center text-lg-start pb-xl-2 mx-auto mx-lg-0 mb-5" style="max-width: 420px;">Response & Service Excellence</p>
-              <div class="d-flex flex-column flex-sm-row align-items-center pb-lg-2">
-                      <a class="btn btn-lg btn-info w-100 w-sm-auto me-sm-3 mb-3 mb-sm-0" href="https://wa.me/628170278686?text=I'm%20interested%20in%20a%20free%20consultation">Chat for Free Consultation</a>
-                      <a class="btn btn-lg btn-secondary w-100 w-sm-auto me-sm-3 mb-3 mb-sm-0" href="tel:+628170278686">
-                        <i class="ai-phone fs-xl me-2"></i>
-                        +628170278686
-                      </a>
-                    </div>
-            </div>
+     <!-- Hero -->
+<section class="d-flex min-vh-100 position-relative overflow-hidden py-5" 
+  style="background: url('assets/img/landing/business-consulting/bg-hero.jpg') no-repeat center center / cover;" 
+  data-bs-theme="dark">
+  
+  <!-- Overlay -->
+  <div class="position-absolute top-0 start-0 w-100 h-100" 
+       style="background: rgba(0,0,0,0.55); z-index:1;"></div>
+
+  <div class="container d-flex flex-column justify-content-center position-relative z-2 pt-sm-3 pt-md-4 pt-xl-5 pb-1 pb-sm-3 pb-lg-4 pb-xl-5">
+    <div class="row flex-lg-nowrap align-items-center pb-5 pt-2 pt-lg-4 pt-xl-0 mt-lg-4 mt-xl-0">
+      
+      <!-- Logo -->
+      <div class="col-lg-7 order-lg-2 ms-lg-4 mb-2 mb-lg-0">
+        <div class="parallax order-lg-2 mx-auto" style="max-width: 740px;">
+          <div class="parallax-layer d-flex justify-content-center align-items-center" data-depth="0.05" style="height:100%;">
+            <img src="assets/img/landing/business-consulting/logo.png" alt="Layer" 
+                 style="max-width:250px; width:80%; height:auto; display:block;">
           </div>
         </div>
-      </section>
+      </div>
+
+      <!-- Text -->
+      <div class="col-lg-5 order-lg-1 text-center text-lg-start me-xl-5 text-white">
+        <h1 class="display-4 py-3 my-2 mb-xl-3 text-shadow">
+              <img src="assets/img/landing/business-consulting/logofont.png" alt="Brave Strategy" class="img-fluid" style="max-height: 80px;">
+               <span class="badge bg-warning bg-opacity-75 text-dark fs-sm">Fast Response & Service Excellence 🚀</span>
+            </h1>
+            
+       
+        <ul class="list-unstyled d-table text-start mx-auto mx-lg-0 mb-0">
+          <li class="d-flex pb-2 mb-1">
+            <i class="ai-check-alt text-info lead me-2"></i>
+            Keamanan menyeluruh untuk individu, bisnis, dan acara
+          </li>
+          <li class="d-flex pb-2 mb-1">
+            <i class="ai-check-alt text-info lead me-2"></i>
+            Sistem parkir modern yang rapi dan terintegrasi
+          </li>
+          <li class="d-flex pb-2 mb-1">
+            <i class="ai-check-alt text-info lead me-2"></i>
+            Tim profesional dengan standar layanan tinggi
+          </li>
+        </ul>
+        <div class="d-flex justify-content-center justify-content-lg-start pt-4 pt-xl-5">
+          <div class="text-center">
+            <a class="btn btn-lg btn-info rounded-pill w-100 w-sm-auto" href="https://wa.me/628170278686?text=Hello,%20I'm%20interested%20in%20your%20services.%20Could%20you%20share%20more%20details?">Hubungi Kami</a>
+            <p class="fs-sm pt-2 mt-sm-1 mb-0 text-light">Konsultasi gratis untuk memulai layanan Anda!</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
 
 
       <!-- Stats -->
@@ -331,353 +365,455 @@
 
 
       <!-- Layanan Keamanan -->
-      <section id="layanankeamanan" class="container py-5">
-        <h2 class="h1 text-center">Layanan Keamanan</h2>
-</button>
-        <p class="text-center pb-4 mb-2 mb-lg-3">Kami menghadirkan layanan konsultasi dan pengamanan yang cepat, tepat, dan profesional demi perlindungan maksimal.</p>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+      <section id="services" class="container py-5">
+        <h2 class="h1 text-center">Our Services</h2>
+        <p class="text-center pb-4 mb-2 mb-lg-3">Semua layanan Brave Strategy ditangani oleh para profesional berpengalaman yang menguasai aspek taktis, teknis, dan manajerial, siap menghadapi tantangan dengan presisi dan integritas. Dengan tim yang solid, kami menghadirkan perlindungan, kepastian, serta solusi strategis yang dapat diandalkan.</p>
 
-          <!-- Item -->
-          <div class="col">
-            <a data-bs-toggle="modal" data-bs-target="#fastresponse" class="card card-hover-info border-0 h-100 text-decoration-none" href="#">
-              <div class="card-body pb-0">
-                <img src="assets/img/landing/business-consulting/logo1.png" alt="Fast Response Icon" class="d-block mb-4" width="80" height="80">
-
-                <h3 class="h4 card-title mt-0">Fast Response</h3>
-                <p class="card-text">
-                  Fast Response adalah unit khusus yang bertugas untuk menangani situasi darurat dengan cepat dan tepat. Tim ini dilatih untuk bisa bergerak dalam waktu singkat ke lokasi kejadian, baik itu insiden pencurian, keributan, atau gangguan keamanan lainnya. Dibekali alat komunikasi dan perlengkapan operasional, layanan ini ideal bagi perusahaan, perumahan, atau kawasan bisnis yang membutuhkan respon cepat terhadap potensi ancaman.
-                </p>
+        <!-- Horizontal card: Image on the left -->
+        <div class="card overflow-hidden">
+          <div class="row g-0">
+            <div class="col-sm-4 bg-repeat-0 bg-size-cover" style="background-image: url(assets/img/landing/business-consulting/fastresponse/3.jpg); min-height: 14rem;"></div>
+            <div class="col-sm-8">
+              <div class="card-body">
+                <h4 class="card-title">Fast Response Unit</h4>
+                <p class="card-text">Unit tanggap darurat siap bertindak cepat kapan pun diperlukan.
+                Dirancang untuk menangani situasi kritis dengan presisi, ketangkasan, dan tindakan terukur.
+                Mengutamakan kecepatan tanpa mengurangi ketepatan dalam pelaksanaan.
+                Memberikan jaminan bahwa keamanan selalu terkendali.</p>
+                <a data-bs-toggle="modal" data-bs-target="#fastresponse" href="#" class="btn btn-primary">More</a>
               </div>
-              <div class="card-footer border-0 py-3 my-3 mb-sm-4">
-                <div class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none">
-                  <i class="ai-arrow-right"></i>
-                </div>
-              </div>
-            </a>
+            </div>
           </div>
-
-
-          <!-- Item -->
-          <div class="col">
-            <a data-bs-toggle="modal" data-bs-target="#bodyguard" class="card card-hover-info border-0 h-100 text-decoration-none" href="#">
-              <div class="card-body pb-0">
-                <img src="assets/img/landing/business-consulting/logo2.png" alt="Fast Response Icon" class="d-block mb-4" width="80" height="80">
-
-                <h3 class="h4 card-title mt-0">Body Guard</h3>
-                <p class="card-text">Layanan Body Guard menyediakan personel keamanan pribadi yang berpengalaman untuk melindungi individu dengan tingkat risiko tinggi. Body guard kami memiliki latar belakang pelatihan khusus, memahami teknik pengamanan tertutup maupun terbuka, serta mampu menganalisis potensi ancaman di sekitar klien secara real-time.</p>
+        </div>
+        <br>
+        <!-- Horizontal card: Image on the right -->
+        <div class="card overflow-hidden">
+          <div class="row g-0">
+            <div class="col-sm-4 bg-repeat-0 bg-size-cover order-sm-2" style="background-image: url(assets/img/landing/business-consulting/bodyguard/1.jpg); min-height: 14rem;"></div>
+            <div class="col-sm-8 order-sm-1">
+              <div class="card-body">
+                <h4 class="card-title">Bodyguard Profesional</h4>
+                <p class="card-text">Layanan keamanan pribadi dengan standar internasional.
+                Melindungi individu, eksekutif, dan tamu VIP dengan keahlian terbaik.
+                Mengutamakan profesionalisme, kerahasiaan, serta kewaspadaan tinggi.
+                Memberikan ketenangan pikiran di setiap langkah, situasi, dan perjalanan Anda.</p>
+                <a data-bs-toggle="modal" data-bs-target="#bodyguard" href="#" class="btn btn-primary">More</a>
               </div>
-              <div class="card-footer border-0 py-3 my-3 mb-sm-4">
-                <div class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none">
-                  <i class="ai-arrow-right"></i>
-                </div>
-              </div>
-            </a>
+            </div>
           </div>
+        </div>
 
-          <!-- Item -->
-          <div class="col">
-            <a  data-bs-toggle="modal" data-bs-target="#crowdcontrol" class="card card-hover-info border-0 h-100 text-decoration-none" href="#">
-              <div class="card-body pb-0">
-                <img src="assets/img/landing/business-consulting/logo3.png" alt="Fast Response Icon" class="d-block mb-4" width="80" height="80">
+        <br>
 
-                <h3 class="h4 card-title mt-0">Crowd Control</h3>
-                <p class="card-text">Crowd Control adalah layanan pengelolaan kerumunan untuk mencegah kekacauan atau risiko kerusuhan dalam sebuah acara atau kegiatan publik. Tim kami terlatih dalam membaca dinamika massa, mengendalikan arus orang, hingga menghadapi situasi darurat secara terstruktur tanpa menimbulkan kepanikan.</p>
+        <!-- Horizontal card: Image on the left -->
+        <div class="card overflow-hidden">
+          <div class="row g-0">
+            <div class="col-sm-4 bg-repeat-0 bg-size-cover" style="background-image: url(assets/img/landing/business-consulting/crowdcontrol/1.jpg); min-height: 14rem;"></div>
+            <div class="col-sm-8">
+              <div class="card-body">
+                <h4 class="card-title">Crowd Control</h4>
+                <p class="card-text">Solusi pengendalian massa yang efektif, aman, dan terstruktur.
+Menjaga ketertiban selama acara, demonstrasi, maupun situasi kritis.
+Mencegah eskalasi potensi konflik melalui pendekatan taktis.
+Memastikan keselamatan orang, aset, dan reputasi tetap terlindungi.</p>
+                <a data-bs-toggle="modal" data-bs-target="#crowdcontrol" href="#" class="btn btn-primary">More</a>
               </div>
-              <div class="card-footer border-0 py-3 my-3 mb-sm-4">
-                <div class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none">
-                  <i class="ai-arrow-right"></i>
-                </div>
-              </div>
-            </a>
+            </div>
           </div>
-
-          <!-- Item -->
-          <div class="col">
-            <a data-bs-toggle="modal" data-bs-target="#ligitasi" class="card card-hover-info border-0 h-100 text-decoration-none" href="#">
-              <div class="card-body pb-0">
-                <img src="assets/img/landing/business-consulting/logo4.png" alt="Fast Response Icon" class="d-block mb-4" width="80" height="80">
-
-                <h3 class="h4 card-title mt-0">Litigasi</h3>
-                <p class="card-text">Layanan Litigasi kami mencakup pengamanan selama proses hukum berlangsung. Ini meliputi pengawalan terhadap klien, pengamanan aset yang disengketakan, hingga perlindungan terhadap saksi penting. Tim kami memahami sensitivitas hukum dan mampu menjaga stabilitas situasi dengan pendekatan yang profesional dan etis.</p>
+        </div>
+        <br>
+        <!-- Horizontal card: Image on the right -->
+        <div class="card overflow-hidden">
+          <div class="row g-0">
+            <div class="col-sm-4 bg-repeat-0 bg-size-cover order-sm-2" style="background-image: url(assets/img/landing/business-consulting/ligitasi/2.jpg); min-height: 14rem;"></div>
+            <div class="col-sm-8 order-sm-1">
+              <div class="card-body">
+                <h4 class="card-title">Litigation</h4>
+                <p class="card-text">Membantu klien menyelesaikan permasalahan hukum secara efektif dan strategis.
+Dengan tim profesional berpengalaman, kami siap mendampingi dalam penyelesaian sengketa baik di dalam maupun di luar pengadilan.
+Kami mengutamakan kepastian hukum, perlindungan kepentingan klien, serta solusi yang profesional dan berlandaskan integritas.</p>
+                <a data-bs-toggle="modal" data-bs-target="#ligitasi" href="#" class="btn btn-primary">More</a>
               </div>
-              <div class="card-footer border-0 py-3 my-3 mb-sm-4">
-                <div class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none">
-                  <i class="ai-arrow-right"></i>
-                </div>
-              </div>
-            </a>
+            </div>
           </div>
+        </div>
 
-          <!-- Item -->
-          <div class="col">
-            <a data-bs-toggle="modal" data-bs-target="#investigasi" class="card card-hover-info border-0 h-100 text-decoration-none" href="#">
-              <div class="card-body pb-0">
-                <img src="assets/img/landing/business-consulting/logo1.png" alt="Fast Response Icon" class="d-block mb-4" width="80" height="80">
+        <br>
 
-                <h3 class="h4 card-title mt-0">Investigasi</h3>
-                <p class="card-text">Layanan investigasi kami berfokus pada pengungkapan kasus dengan pendekatan sistematis dan rahasia. Investigasi bisa mencakup pengawasan internal perusahaan, pengumpulan bukti terhadap penyalahgunaan wewenang, hingga pemantauan pihak-pihak tertentu dalam kasus pribadi atau bisnis.</p>
+        <!-- Horizontal card: Image on the left -->
+        <div class="card overflow-hidden">
+          <div class="row g-0">
+            <div class="col-sm-4 bg-repeat-0 bg-size-cover" style="background-image: url(assets/img/landing/business-consulting/investigasi/1.jpg); min-height: 14rem;"></div>
+            <div class="col-sm-8">
+              <div class="card-body">
+                <h4 class="card-title">Investigasi</h4>
+                <p class="card-text">Investigasi profesional untuk menemukan fakta secara tepat dan objektif.
+Didukung tim berpengalaman, kami menangani berbagai kasus, mulai dari kecurangan internal hingga pelanggaran regulasi.
+Seluruh proses dijalankan dengan kerahasiaan, sistem yang terukur, serta tanggung jawab hukum yang jelas.</p>
+                <a data-bs-toggle="modal" data-bs-target="#investigasi" href="#" class="btn btn-primary">More</a>
               </div>
-              <div class="card-footer border-0 py-3 my-3 mb-sm-4">
-                <div class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none">
-                  <i class="ai-arrow-right"></i>
-                </div>
-              </div>
-            </a>
+            </div>
           </div>
-
-          <!-- Item -->
-          <div class="col">
-            <a data-bs-toggle="modal" data-bs-target="#training" class="card card-hover-info border-0 h-100 text-decoration-none" href="#">
-              <div class="card-body pb-0">
-                <img src="assets/img/landing/business-consulting/logo2.png" alt="Fast Response Icon" class="d-block mb-4" width="80" height="80">
-
-                <h3 class="h4 card-title mt-0">Training</h3>
-                <p class="card-text">Kami menyediakan program pelatihan keamanan untuk individu maupun perusahaan. Training ini mencakup keterampilan fisik, penanganan konflik, observasi, pertolongan pertama, hingga simulasi kondisi darurat. Dapat disesuaikan untuk kebutuhan petugas keamanan baru maupun peningkatan kapasitas SDM internal.</p>
+        </div>
+        <br>
+        <!-- Horizontal card: Image on the right -->
+        <div class="card overflow-hidden">
+          <div class="row g-0">
+            <div class="col-sm-4 bg-repeat-0 bg-size-cover order-sm-2" style="background-image: url(assets/img/landing/business-consulting/training/1.jpeg); min-height: 14rem;"></div>
+            <div class="col-sm-8 order-sm-1">
+              <div class="card-body">
+                <h4 class="card-title">Security Training &
+Development</h4>
+                <p class="card-text">Program pelatihan ini dirancang untuk membentuk personel keamanan yang kuat dan profesional.
+Peserta dibekali keterampilan taktis, teknis, hingga kepemimpinan manajerial.
+Dengan disiplin ketat dan praktik langsung di lapangan, mereka dipersiapkan untuk menghadapi berbagai ancaman nyata dengan efektif.</p>
+                <a data-bs-toggle="modal" data-bs-target="#training" href="#" class="btn btn-primary">More</a>
               </div>
-              <div class="card-footer border-0 py-3 my-3 mb-sm-4">
-                <div class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none">
-                  <i class="ai-arrow-right"></i>
-                </div>
-              </div>
-            </a>
+            </div>
           </div>
+        </div>
 
-          <!-- Item -->
-          <div class="col">
-            <a data-bs-toggle="modal" data-bs-target="#debtcollector" class="card card-hover-info border-0 h-100 text-decoration-none" href="#">
-              <div class="card-body pb-0">
-                <img src="assets/img/landing/business-consulting/logo3.png" alt="Fast Response Icon" class="d-block mb-4" width="80" height="80">
+        <br>
 
-                <h3 class="h4 card-title mt-0">Debt Collector</h3>
-                <p class="card-text">Layanan penagihan utang ini disediakan dengan pendekatan profesional, persuasif, dan sesuai hukum. Kami menjembatani komunikasi dengan pihak debitur secara terukur, meminimalisir konflik, dan mempercepat proses penyelesaian secara damai.</p>
+        <!-- Horizontal card: Image on the left -->
+        <div class="card overflow-hidden">
+          <div class="row g-0">
+            <div class="col-sm-4 bg-repeat-0 bg-size-cover" style="background-image: url(assets/img/landing/business-consulting/debtcollector/1.jpg); min-height: 14rem;"></div>
+            <div class="col-sm-8">
+              <div class="card-body">
+                <h4 class="card-title">Professional Debt
+Collector</h4>
+                <p class="card-text">Layanan penagihan utang yang tegas, etis, dan sesuai hukum.
+Kami mengutamakan prosedur resmi tanpa mengabaikan pendekatan yang humanis.
+Mendampingi klien untuk mendapatkan kembali haknya secara efektif dan bermartabat.
+Memberikan solusi finansial yang aman serta dapat dipercaya.</p>
+                <a data-bs-toggle="modal" data-bs-target="#debtcollector" href="#" class="btn btn-primary">More</a>
               </div>
-              <div class="card-footer border-0 py-3 my-3 mb-sm-4">
-                <div class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none">
-                  <i class="ai-arrow-right"></i>
-                </div>
-              </div>
-            </a>
+            </div>
           </div>
-
-          <!-- Item -->
-          <div class="col">
-            <a data-bs-toggle="modal" data-bs-target="#cctv" class="card card-hover-info border-0 h-100 text-decoration-none" href="#">
-              <div class="card-body pb-0">
-                <img src="assets/img/landing/business-consulting/logo4.png" alt="Fast Response Icon" class="d-block mb-4" width="80" height="80">
-
-                <h3 class="h4 card-title mt-0">CCTV</h3>
-                <p class="card-text">Kami menyediakan layanan instalasi dan pemeliharaan CCTV berkualitas tinggi. Sistem ini bisa terintegrasi dengan perangkat pintar, kontrol jarak jauh, hingga layanan monitoring langsung untuk perusahaan maupun rumah pribadi.</p>
+        </div>
+        <br>
+        <!-- Horizontal card: Image on the right -->
+        <div class="card overflow-hidden">
+          <div class="row g-0">
+            <div class="col-sm-4 bg-repeat-0 bg-size-cover order-sm-2" style="background-image: url(assets/img/landing/business-consulting/cctv/1.jpg); min-height: 14rem;"></div>
+            <div class="col-sm-8 order-sm-1">
+              <div class="card-body">
+                <h4 class="card-title">CCTV & Monitoring
+System</h4>
+                <p class="card-text">Bantuan hukum untuk menyelesaikan berbagai sengketa secara tepat.
+Investigasi profesional guna mengungkap fakta dan bukti secara akurat.
+Mendukung klien dalam melindungi kepentingannya secara sah dan etis.
+Menghadirkan keadilan melalui analisis yang transparan dan dapat dipercaya.</p>
+                <a data-bs-toggle="modal" data-bs-target="#cctv" href="#" class="btn btn-primary">More</a>
               </div>
-              <div class="card-footer border-0 py-3 my-3 mb-sm-4">
-                <div class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none">
-                  <i class="ai-arrow-right"></i>
-                </div>
-              </div>
-            </a>
+            </div>
           </div>
+        </div>
 
-           <!-- Item -->
-          <div class="col">
-            <a data-bs-toggle="modal" data-bs-target="#voorrijder" class="card card-hover-info border-0 h-100 text-decoration-none" href="#">
-              <div class="card-body pb-0">
-                <img src="assets/img/landing/business-consulting/logo1.png" alt="Fast Response Icon" class="d-block mb-4" width="80" height="80">
+        <br>
 
-                <h3 class="h4 card-title mt-0">VoorRijder</h3>
-                <p class="card-text">Layanan Voorrijder kami memberikan pengawalan profesional untuk memastikan perjalanan Anda aman, lancar, dan tepat waktu. Dengan personel berpengalaman, kendaraan pengawalan khusus, serta koordinasi real-time, kami membantu mengatur lalu lintas, memilih rute tercepat, dan menjaga keamanan sepanjang perjalanan, ideal untuk tamu VIP, acara penting, maupun agenda yang membutuhkan prioritas di jalan.</p>
+        <!-- Horizontal card: Image on the left -->
+        <div class="card overflow-hidden">
+          <div class="row g-0">
+            <div class="col-sm-4 bg-repeat-0 bg-size-cover" style="background-image: url(assets/img/landing/business-consulting/voorijder/3.jpg); min-height: 14rem;"></div>
+            <div class="col-sm-8">
+              <div class="card-body">
+                <h4 class="card-title">Voorijder</h4>
+                <p class="card-text">Layanan pengawalan kendaraan untuk perjalanan VIP, eksekutif, dan korporasi.
+Tim terlatih memastikan keamanan, kenyamanan, serta kelancaran perjalanan.
+Mengurangi potensi risiko dan menjaga jadwal tetap tepat waktu.
+Memberikan ketenangan bagi setiap klien dalam mobilitas penting mereka.</p>
+                <a data-bs-toggle="modal" data-bs-target="#voorrijder" href="#" class="btn btn-primary">More</a>
               </div>
-              <div class="card-footer border-0 py-3 my-3 mb-sm-4">
-                <div class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none">
-                  <i class="ai-arrow-right"></i>
-                </div>
-              </div>
-            </a>
+            </div>
           </div>
+        </div>
+        <br>
+        <!-- Horizontal card: Image on the right -->
+        <div class="card overflow-hidden">
+          <div class="row g-0">
+            <div class="col-sm-4 bg-repeat-0 bg-size-cover order-sm-2" style="background-image: url(assets/img/landing/business-consulting/rexparking/1.jpg); min-height: 14rem;"></div>
+            <div class="col-sm-8 order-sm-1">
+              <div class="card-body">
+                <h4 class="card-title">RexParking – Solusi Parkir Modern & Premium</h4>
+                <p class="card-text">Sistem manajemen parkir modern yang aman dan efisien.
+Menggunakan teknologi cerdas untuk pengaturan parkir yang tertib.
+Mendukung keamanan aset kendaraan di area publik maupun privat.
+Memberikan kenyamanan dan kepastian melalui pengelolaan parkir yang profesional.</p>
+                <a data-bs-toggle="modal" data-bs-target="#rexparking" href="#" class="btn btn-primary">More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
 
 
+        
         </div>
       </section>
 
-      <!-- Layanan Parkir -->
-      <section id="layananparkir" class="container py-5">
-        <h2 class="h1 text-center">RexParking</h2>
-        <p class="text-center pb-4 mb-2 mb-lg-3">RexParking adalah sistem manajemen parkir cerdas yang menggabungkan teknologi, efisiensi, dan keamanan. Cocok untuk pusat perbelanjaan, hotel, kantor, dan area umum lainnya yang membutuhkan sistem parkir otomatis dan terintegrasi.</p>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
-
-          
-
-           <!-- Item -->
-          <div class="col">
-            <a  data-bs-toggle="modal" data-bs-target="#parkingsystem" class="card card-hover-info border-0 h-100 text-decoration-none" href="#">
-              <div class="card-body pb-0">
-                <img src="assets/img/landing/business-consulting/iconrexparking.png" alt="Fast Response Icon" class="d-block mb-4" width="60" height="60">
-
-                <h3 class="h4 card-title mt-0">Parking System</h3>
-                <p class="card-text">Layanan ini mencakup instalasi sistem parkir otomatis: boom gate, sensor kendaraan, software tiket, hingga integrasi pembayaran digital. Sangat ideal bagi pengelola gedung atau area parkir yang ingin meningkatkan efisiensi dan mengurangi human error.</p>
-              </div>
-              <div class="card-footer border-0 py-3 my-3 mb-sm-4">
-                <div class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none">
-                  <i class="ai-arrow-right"></i>
-                </div>
-              </div>
-            </a>
-          </div>
-
-           <!-- Item -->
-          <div class="col">
-            <a data-bs-toggle="modal" data-bs-target="#valetservice" class="card card-hover-info border-0 h-100 text-decoration-none" href="#">
-              <div class="card-body pb-0">
-                <img src="assets/img/landing/business-consulting/iconrexparking.png" alt="Fast Response Icon" class="d-block mb-4" width="60" height="60">
-
-                <h3 class="h4 card-title mt-0">Valet Service</h3>
-                <p class="card-text">Valet Service kami memberikan layanan parkir premium dengan tenaga profesional yang terlatih dalam pelayanan tamu dan manuver kendaraan. Cocok untuk hotel, restoran, venue acara, dan bangunan premium lainnya.</p>
-              </div>
-              <div class="card-footer border-0 py-3 my-3 mb-sm-4">
-                <div class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none">
-                  <i class="ai-arrow-right"></i>
-                </div>
-              </div>
-            </a>
-          </div>
-
-
-
-        </div>
-      </section>
+      
 
 
       <!-- Industries (Carousel on screens < 992px) -->
-      <section id="gallery" class="container pb-5 pt-3 pt-sm-4 pt-lg-5 my-xl-3 my-xxl-5">
-        <h2 class="h1 text-center">Gallery</h2>
-        <p class="text-center pb-4 mb-2 mb-lg-3">Potret Profesionalisme dan Komitmen di Lapangan</p>
+      <section id="gallery" class="bg-dark text-light container-fluid py-5 my-xl-3 my-xxl-5">
+  <div class="container text-center mb-5">
+        <h2 class="h1 text-center text-white">Gallery</h2>
+        <p class="text-center pb-4 mb-2 mb-lg-3">Sebuah potret perjalanan kami dalam menghadirkan layanan profesional dan berkelas dunia, yang tercermin dalam setiap langkah, dedikasi, serta pencapaian nyata Brave Strategy dalam memberikan solusi keamanan terbaik bagi setiap klien.</p>
 
         <!-- Gallery grid with enabled thumbnails -->
 <div class="gallery row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4" data-thumbnails="true">
 
   <!-- Item -->
   <div class="col">
-    <a href="assets/img/landing/business-consulting/gallery/01.jpg" class="gallery-item d-block card-hover">
+    <a href="assets/img/landing/business-consulting/voorijder/3.jpg" class="gallery-item d-block card-hover">
       <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 rounded-4 overflow-hidden z-2 opacity-0">
         <i class="ai-zoom-in fs-2 text-white position-relative z-2"></i>
         <div class="position-absolute bottom-0 start-0 w-100 text-center text-white fs-sm fw-medium z-2 pb-3">
-          Brave Strategy
+         Voorijder
         </div>
         <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
       </div>
-      <img src="assets/img/landing/business-consulting/gallery/01.jpg" class="d-block rounded-4" alt="Image #1">
+      <img src="assets/img/landing/business-consulting/voorijder/3.jpg" class="d-block rounded-4" alt="Image #1">
     </a>
   </div>
 
   <!-- Item -->
   <div class="col">
-    <a href="assets/img/landing/business-consulting/gallery/02.jpeg" class="gallery-item d-block card-hover">
+    <a href="assets/img/landing/business-consulting/voorijder/2.jpg" class="gallery-item d-block card-hover">
       <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 rounded-4 overflow-hidden z-2 opacity-0">
         <i class="ai-zoom-in fs-2 text-white position-relative z-2"></i>
         <div class="position-absolute bottom-0 start-0 w-100 text-center text-white fs-sm fw-medium z-2 pb-3">
-          Brave Strategy
+         Voorijder
         </div>
         <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
       </div>
-      <img src="assets/img/landing/business-consulting/gallery/02.jpeg" class="d-block rounded-4" alt="Image #2">
+      <img src="assets/img/landing/business-consulting/voorijder/2.jpg" class="d-block rounded-4" alt="Brave Strategy">
     </a>
   </div>
 
   <!-- Item -->
   <div class="col">
-    <a href="assets/img/landing/business-consulting/gallery/03.heic" class="gallery-item d-block card-hover">
+    <a href="assets/img/landing/business-consulting/voorijder/1.jpg" class="gallery-item d-block card-hover">
       <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 rounded-4 overflow-hidden z-2 opacity-0">
         <i class="ai-zoom-in fs-2 text-white position-relative z-2"></i>
         <div class="position-absolute bottom-0 start-0 w-100 text-center text-white fs-sm fw-medium z-2 pb-3">
-          Brave Strategy
+          Voorijder
         </div>
         <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
       </div>
-      <img src="assets/img/landing/business-consulting/gallery/03.heic" class="d-block rounded-4" alt="Image #3s">
+      <img src="assets/img/landing/business-consulting/voorijder/1.jpg" class="d-block rounded-4" alt="Brave Strategy">
     </a>
   </div>
 
   <!-- Item -->
   <div class="col">
-    <a href="assets/img/landing/business-consulting/gallery/04.jpeg" class="gallery-item d-block card-hover">
+    <a href="assets/img/landing/business-consulting/bodyguard/1.jpg" class="gallery-item d-block card-hover">
       <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 rounded-4 overflow-hidden z-2 opacity-0">
         <i class="ai-zoom-in fs-2 text-white position-relative z-2"></i>
         <div class="position-absolute bottom-0 start-0 w-100 text-center text-white fs-sm fw-medium z-2 pb-3">
-          Brave Strategy
+          Bodyguard Profesional
         </div>
         <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
       </div>
-      <img src="assets/img/landing/business-consulting/gallery/04.jpeg" class="d-block rounded-4" alt="Image #3s">
+      <img src="assets/img/landing/business-consulting/bodyguard/1.jpg" class="d-block rounded-4" alt="Brave Strategy">
     </a>
   </div>
 
   <!-- Item -->
   <div class="col">
-    <a href="assets/img/landing/business-consulting/gallery/05.jpeg" class="gallery-item d-block card-hover">
+    <a href="assets/img/landing/business-consulting/bodyguard/2.jpg" class="gallery-item d-block card-hover">
       <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 rounded-4 overflow-hidden z-2 opacity-0">
         <i class="ai-zoom-in fs-2 text-white position-relative z-2"></i>
         <div class="position-absolute bottom-0 start-0 w-100 text-center text-white fs-sm fw-medium z-2 pb-3">
-          Brave Strategy
+          Bodyguard Profesional
         </div>
         <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
       </div>
-      <img src="assets/img/landing/business-consulting/gallery/05.jpeg" class="d-block rounded-4" alt="Image #3s">
+      <img src="assets/img/landing/business-consulting/bodyguard/2.jpg" class="d-block rounded-4" alt="Brave Strategy">
     </a>
   </div>
 
   <!-- Item -->
   <div class="col">
-    <a href="assets/img/landing/business-consulting/gallery/06.jpeg" class="gallery-item d-block card-hover">
+    <a href="assets/img/landing/business-consulting/bodyguard/3.jpg" class="gallery-item d-block card-hover">
       <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 rounded-4 overflow-hidden z-2 opacity-0">
         <i class="ai-zoom-in fs-2 text-white position-relative z-2"></i>
         <div class="position-absolute bottom-0 start-0 w-100 text-center text-white fs-sm fw-medium z-2 pb-3">
-          Brave Strategy
+          Bodyguard Profesional
         </div>
         <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
       </div>
-      <img src="assets/img/landing/business-consulting/gallery/06.jpeg" class="d-block rounded-4" alt="Image #3s">
+      <img src="assets/img/landing/business-consulting/bodyguard/3.jpg" class="d-block rounded-4" alt="Brave Strategy">
     </a>
   </div>
 
   <!-- Item -->
   <div class="col">
-    <a href="assets/img/landing/business-consulting/gallery/07.jpeg" class="gallery-item d-block card-hover">
+    <a href="assets/img/landing/business-consulting/bodyguard/7.jpg" class="gallery-item d-block card-hover">
       <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 rounded-4 overflow-hidden z-2 opacity-0">
         <i class="ai-zoom-in fs-2 text-white position-relative z-2"></i>
         <div class="position-absolute bottom-0 start-0 w-100 text-center text-white fs-sm fw-medium z-2 pb-3">
-          Brave Strategy
+          Close Protection Officer
         </div>
         <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
       </div>
-      <img src="assets/img/landing/business-consulting/gallery/07.jpeg" class="d-block rounded-4" alt="Image #3s">
+      <img src="assets/img/landing/business-consulting/bodyguard/7.jpg" class="d-block rounded-4" alt="Brave Strategy">
     </a>
   </div>
 
   <!-- Item -->
   <div class="col">
-    <a href="assets/img/landing/business-consulting/gallery/08.jpeg" class="gallery-item d-block card-hover">
+    <a href="assets/img/landing/business-consulting/bodyguard/8.jpg" class="gallery-item d-block card-hover">
       <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 rounded-4 overflow-hidden z-2 opacity-0">
         <i class="ai-zoom-in fs-2 text-white position-relative z-2"></i>
         <div class="position-absolute bottom-0 start-0 w-100 text-center text-white fs-sm fw-medium z-2 pb-3">
-          Brave Strategy
+           Close Protection Officer
         </div>
         <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
       </div>
-      <img src="assets/img/landing/business-consulting/gallery/08.jpeg" class="d-block rounded-4" alt="Image #3s">
+      <img src="assets/img/landing/business-consulting/bodyguard/8.jpg" class="d-block rounded-4" alt="Brave Strategy">
     </a>
   </div>
 
   <!-- Item -->
   <div class="col">
-    <a href="assets/img/landing/business-consulting/gallery/09.jpg" class="gallery-item d-block card-hover">
+    <a href="assets/img/landing/business-consulting/bodyguard/9.jpg" class="gallery-item d-block card-hover">
       <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 rounded-4 overflow-hidden z-2 opacity-0">
         <i class="ai-zoom-in fs-2 text-white position-relative z-2"></i>
         <div class="position-absolute bottom-0 start-0 w-100 text-center text-white fs-sm fw-medium z-2 pb-3">
-          Brave Strategy
+           Close Protection Officer
         </div>
         <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
       </div>
-      <img src="assets/img/landing/business-consulting/gallery/09.jpg" class="d-block rounded-4" alt="Image #3s">
+      <img src="assets/img/landing/business-consulting/bodyguard/9.jpg" class="d-block rounded-4" alt="Brave Strategy">
     </a>
   </div>
+
+  <!-- Item -->
+  <div class="col">
+    <a href="assets/img/landing/business-consulting/rexparking/2.jpg" class="gallery-item d-block card-hover">
+      <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 rounded-4 overflow-hidden z-2 opacity-0">
+        <i class="ai-zoom-in fs-2 text-white position-relative z-2"></i>
+        <div class="position-absolute bottom-0 start-0 w-100 text-center text-white fs-sm fw-medium z-2 pb-3">
+          RexParking
+        </div>
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
+      </div>
+      <img src="assets/img/landing/business-consulting/rexparking/2.jpg" class="d-block rounded-4" alt="Brave Strategy">
+    </a>
+  </div>
+
+  <!-- Item -->
+  <div class="col">
+    <a href="assets/img/landing/business-consulting/rexparking/3.jpg" class="gallery-item d-block card-hover">
+      <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 rounded-4 overflow-hidden z-2 opacity-0">
+        <i class="ai-zoom-in fs-2 text-white position-relative z-2"></i>
+        <div class="position-absolute bottom-0 start-0 w-100 text-center text-white fs-sm fw-medium z-2 pb-3">
+          RexParking
+        </div>
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
+      </div>
+      <img src="assets/img/landing/business-consulting/rexparking/3.jpg" class="d-block rounded-4" alt="Brave Strategy">
+    </a>
+  </div>
+
+  <!-- Item -->
+  <div class="col">
+    <a href="assets/img/landing/business-consulting/rexparking/4.jpg" class="gallery-item d-block card-hover">
+      <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 rounded-4 overflow-hidden z-2 opacity-0">
+        <i class="ai-zoom-in fs-2 text-white position-relative z-2"></i>
+        <div class="position-absolute bottom-0 start-0 w-100 text-center text-white fs-sm fw-medium z-2 pb-3">
+          RexParking
+        </div>
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
+      </div>
+      <img src="assets/img/landing/business-consulting/rexparking/4.jpg" class="d-block rounded-4" alt="Brave Strategy">
+    </a>
+  </div>
+
+  <!-- Item -->
+  <div class="col">
+    <a href="assets/img/landing/business-consulting/rexparking/5.jpg" class="gallery-item d-block card-hover">
+      <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 rounded-4 overflow-hidden z-2 opacity-0">
+        <i class="ai-zoom-in fs-2 text-white position-relative z-2"></i>
+        <div class="position-absolute bottom-0 start-0 w-100 text-center text-white fs-sm fw-medium z-2 pb-3">
+          RexParking
+        </div>
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
+      </div>
+      <img src="assets/img/landing/business-consulting/rexparking/5.jpg" class="d-block rounded-4" alt="Brave Strategy">
+    </a>
+  </div>
+
+  <!-- Item -->
+  <div class="col">
+    <a href="assets/img/landing/business-consulting/rexparking/6.jpg" class="gallery-item d-block card-hover">
+      <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 rounded-4 overflow-hidden z-2 opacity-0">
+        <i class="ai-zoom-in fs-2 text-white position-relative z-2"></i>
+        <div class="position-absolute bottom-0 start-0 w-100 text-center text-white fs-sm fw-medium z-2 pb-3">
+          RexParking
+        </div>
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
+      </div>
+      <img src="assets/img/landing/business-consulting/rexparking/6.jpg" class="d-block rounded-4" alt="Brave Strategy">
+    </a>
+  </div>
+
+  <!-- Item -->
+  <div class="col">
+    <a href="assets/img/landing/business-consulting/gallery/7.jpeg" class="gallery-item d-block card-hover">
+      <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 rounded-4 overflow-hidden z-2 opacity-0">
+        <i class="ai-zoom-in fs-2 text-white position-relative z-2"></i>
+        <div class="position-absolute bottom-0 start-0 w-100 text-center text-white fs-sm fw-medium z-2 pb-3">
+          RexParking
+        </div>
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
+      </div>
+      <img src="assets/img/landing/business-consulting/gallery/7.jpeg" class="d-block rounded-4" alt="Brave Strategy">
+    </a>
+  </div>
+
+  
+
+  <!-- Item -->
+  <div class="col">
+    <a href="assets/img/landing/business-consulting/gallery/1.jpg" class="gallery-item d-block card-hover">
+      <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 rounded-4 overflow-hidden z-2 opacity-0">
+        <i class="ai-zoom-in fs-2 text-white position-relative z-2"></i>
+        <div class="position-absolute bottom-0 start-0 w-100 text-center text-white fs-sm fw-medium z-2 pb-3">
+          Litigasi
+        </div>
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
+      </div>
+      <img src="assets/img/landing/business-consulting/gallery/1.jpg" class="d-block rounded-4" alt="Brave Strategy">
+    </a>
+  </div>
+
+  <!-- Item -->
+  <div class="col">
+    <a href="assets/img/landing/business-consulting/gallery/2.jpg" class="gallery-item d-block card-hover">
+      <div class="d-flex justify-content-center align-items-center position-absolute top-0 start-0 w-100 h-100 rounded-4 overflow-hidden z-2 opacity-0">
+        <i class="ai-zoom-in fs-2 text-white position-relative z-2"></i>
+        <div class="position-absolute bottom-0 start-0 w-100 text-center text-white fs-sm fw-medium z-2 pb-3">
+          Litigasi
+        </div>
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-40"></div>
+      </div>
+      <img src="assets/img/landing/business-consulting/gallery/2.jpg" class="d-block rounded-4" alt="Brave Strategy">
+    </a>
+  </div>
+
+  
+
+  
+
+
+
+
+
+
 
 </div>
       </section>
@@ -687,7 +823,9 @@
       <section id="klien" class="pb-5 pt-2 pt-sm-3 pt-md-4 pt-lg-5 my-xl-3 my-xxl-5">
         <div class="container pb-4 mb-2 mb-lg-3">
           <h2 class="h1 text-center">Klien Kami</h2>
-          <p class="text-center mb-0">Lebih dari 500 klien mempercayai kami sebagai mitra dalam layanan keamanan dan parkir.</p>
+          <p class="text-center mb-0">Brave Strategy dengan bangga menyampaikan bahwa seluruh klien yang telah menggunakan layanan kami merasa puas dengan profesionalisme, ketepatan, dan kualitas solusi yang kami berikan.
+
+Kepercayaan mereka menjadi bukti nyata bahwa Brave Strategy mampu menghadapi setiap tantangan dengan standar tertinggi. Kepuasan pelanggan adalah prioritas utama kami, dan kami tetap berkomitmen untuk menghadirkan perlindungan, kepastian, serta solusi strategis yang terpercaya.</p>
         </div>
         <div class="swiper pb-4" data-swiper-options='{
           "spaceBetween": 24,
@@ -850,26 +988,21 @@
       </section>
 
       <!-- CEO quote + Process steps -->
-      <section class="overflow-hidden">
+      <section class="bg-dark text-light overflow-hidden">
         <div class="container pb-5 pt-3 pt-md-4 pt-lg-5 my-xl-3 my-xxl-5">
           <div class="row pb-md-3 pb-lg-4 mb-2 mb-lg-3">
 
             <!-- CEO quote -->
             <div class="col-md-5 d-flex flex-column align-items-center mb-4 mb-md-0">
               <div class="position-relative" style="max-width: 416px;">
-                <img class="d-block position-relative z-2" src="assets/img/landing/business-consulting/ceo.jpeg" alt="Wira Brave">
+                <img class="d-block position-relative z-2" src="assets/img/landing/business-consulting/ceo.jpg" alt="Wira Brave">
                 <div class="bg-info position-absolute start-0 bottom-0 w-100" style="height: 85.4%; border-radius: 2.25rem 8rem 2.25rem 2.25rem;"></div>
               </div>
               <div class="text-center text-md-start pt-3 mt-3">
-                <h2 class="mb-2">Wira Brave</h2>
+                <h2 class="text-white mb-2">Wira Brave</h2>
                 <p class="fs-xl text-body-secondary mb-2">CEO Brave Strategy</p>
                 <div class="position-relative pt-4" style="max-width: 500px;">
-                  <div class="position-absolute top-0 start-0 w-100 text-center text-md-start ms-md-1">
-                    <svg class="text-border" width="155" height="111" viewBox="0 0 155 111" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M125.969 38.7937C129.372 30.2345 134.734 21.7781 141.902 13.6311C144.17 11.053 144.48 7.34066 142.623 4.45316C141.18 2.18441 138.808 0.94696 136.23 0.94696C135.508 0.94696 134.786 0.99826 134.064 1.25633C118.905 5.69065 83.4811 21.4171 82.5014 71.8454C82.1407 91.2842 96.3717 107.99 114.883 109.898C125.144 110.93 135.353 107.578 142.933 100.772C150.512 93.914 154.844 84.117 154.844 73.9077C154.844 56.8922 142.778 41.9905 125.969 38.7937Z"></path>
-                      <path d="M32.5904 109.898C42.7999 110.93 53.0092 107.578 60.5888 100.772C68.1686 93.914 72.5 84.117 72.5 73.9077C72.5 56.8922 60.4342 41.9905 43.6248 38.7937C47.0281 30.2345 52.3905 21.7781 59.5578 13.6312C61.8265 11.0531 62.1359 7.34071 60.2794 4.45321C58.8358 2.18446 56.4638 0.947006 53.8857 0.947006C53.1641 0.947006 52.4421 0.998306 51.7202 1.25638C36.5608 5.6907 1.13734 21.4172 0.157654 71.8454V72.5671C0.157654 91.6968 14.2341 107.99 32.5904 109.898Z"></path>
-                    </svg>
-                  </div>
+                  
                   <p class="fs-xl position-relative z-2 mb-0">WiraBrave adalah seorang profesional keamanan dengan latar belakang intelijen dan pengalaman luas di berbagai proyek berskala internasional. Keahliannya dalam merancang sistem keamanan yang terintegrasi, efisien, dan adaptif menjadikannya sosok kunci di industri ini. Kini, ia memimpin BRAVE Bodyguard—layanan bodyguard perempuan pertama dan terbaik di Asia Tenggara.</p>
                 </div>
               </div>
@@ -920,136 +1053,86 @@
         </div>
       </section>
 
+<!-- Analyst profile + Expertise steps -->
+<section class="overflow-hidden">
+  <div class="container pb-5 pt-3 pt-md-4 pt-lg-5 my-xl-3 my-xxl-5">
+    <div class="row pb-md-3 pb-lg-4 mb-2 mb-lg-3">
 
-      <!-- Testimonials (Carousel) -->
-      <section id="testimony" class="container mt-n3 mt-sm-n2 pb-5 mb-md-2 mb-lg-3 mb-xl-4 mb-xxl-5">
-        <h2 class="h1 text-center pb-3 pb-lg-4">Testimonials</h2>
-
-        <!-- Swiper slider -->
-        <div class="swiper pb-1 pb-md-2 pb-lg-3 pb-xl-4" data-swiper-options='{
-          "spaceBetween": 24,
-          "loop": true,
-          "autoHeight": true,
-          "pagination": {
-            "el": ".swiper-pagination",
-            "clickable": true
-          },
-          "breakpoints": {
-            "576": { "slidesPerView": 2 },
-            "992": { "slidesPerView": 3 }
-          }
-        }'>
-          <div class="swiper-wrapper">
-
-            <!-- Item -->
-            <div class="swiper-slide">
-              <div class="card border-0 mb-4">
-                <div class="card-body">
-                  <div class="d-flex align-items-center mb-3">
-                    <div class="">
-                      <div class="h6 mb-1">Budi Santoso</div>
-                      <div class="fs-sm text-body-secondary">Kepala Keamanan – Kawasan Industri Sentral Jaya</div>
-                    </div>
-                  </div>
-                  <p class="card-text">Kami membutuhkan keamanan dengan standar tinggi dan tanggap darurat. Tim ini memenuhi ekspektasi dengan sistem yang solid dan personel yang terlatih.</p>
-                </div>
-              </div>
-              <div class="card border-0">
-                <div class="card-body">
-                  <div class="d-flex align-items-center mb-3">
-                    <div class="">
-                      <div class="h6 mb-1">Rina Setyawati</div>
-                      <div class="fs-sm text-body-secondary">HRD – RS Permata Hijau</div>
-                    </div>
-                  </div>
-                  <p class="card-text">Kami sangat terbantu dengan kehadiran petugas keamanan dari perusahaan ini. Mereka tak hanya menjaga keamanan, tapi juga menjaga interaksi yang baik dengan pasien dan pengunjung.</p>
-                </div>
-              </div>
+      <!-- Analyst profile -->
+      <div class="col-md-5 d-flex flex-column align-items-center mb-4 mb-md-0">
+        <div class="position-relative" style="max-width: 416px;">
+          <img class="d-block position-relative z-2" src="assets/img/landing/business-consulting/ceo2.jpg" alt="Alto Luger">
+          <div class="bg-info position-absolute start-0 bottom-0 w-100" style="height: 85.4%; border-radius: 2.25rem 8rem 2.25rem 2.25rem;"></div>
+        </div>
+        <div class="text-center text-md-start pt-3 mt-3">
+          <h2 class="mb-2">Alto Luger</h2>
+          <p class="fs-xl text-body-secondary mb-2">Security Analyst</p>
+          <div class="position-relative pt-4" style="max-width: 500px;">
+            <div class="position-absolute top-0 start-0 w-100 text-center text-md-start ms-md-1">
+              <svg class="text-border" width="155" height="111" viewBox="0 0 155 111" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M125.969 38.7937C129.372 30.2345 134.734 21.7781 141.902 13.6311C144.17 11.053 144.48 7.34066 142.623 4.45316C141.18 2.18441 138.808 0.94696 136.23 0.94696C135.508 0.94696 134.786 0.99826 134.064 1.25633C118.905 5.69065 83.4811 21.4171 82.5014 71.8454C82.1407 91.2842 96.3717 107.99 114.883 109.898C125.144 110.93 135.353 107.578 142.933 100.772C150.512 93.914 154.844 84.117 154.844 73.9077C154.844 56.8922 142.778 41.9905 125.969 38.7937Z"></path>
+                <path d="M32.5904 109.898C42.7999 110.93 53.0092 107.578 60.5888 100.772C68.1686 93.914 72.5 84.117 72.5 73.9077C72.5 56.8922 60.4342 41.9905 43.6248 38.7937C47.0281 30.2345 52.3905 21.7781 59.5578 13.6312C61.8265 11.0531 62.1359 7.34071 60.2794 4.45321C58.8358 2.18446 56.4638 0.947006 53.8857 0.947006C53.1641 0.947006 52.4421 0.998306 51.7202 1.25638C36.5608 5.6907 1.13734 21.4172 0.157654 71.8454V72.5671C0.157654 91.6968 14.2341 107.99 32.5904 109.898Z"></path>
+              </svg>
             </div>
+            <p class="fs-xl position-relative z-2 mb-0">
+             
+              Sebagai seorang analis, Alto Luger memiliki tanggung jawab utama untuk mengembangkan dan memelihara Strategi Deteksi serta berkoordinasi dengan tim Manajemen Data. 
+              Beliau telah terlibat dalam berbagai misi tempur di Irak, Yaman, Bosnia, dan Afghanistan. 
+              Selain itu, beliau adalah seorang yang ahli dalam mengoordinasikan analisis peringatan, termasuk memberikan dukungan tingkat senior kepada tim Forensik Digital, Respons Insiden, Ancaman Siber, Intelijen, dan Manajemen Risiko.
+            </p>
+          </div>
+        </div>
+      </div>
 
-            <!-- Item -->
-            <div class="swiper-slide">
-              <div class="card border-0 mb-4">
-                <div class="card-body">
-                  <div class="d-flex align-items-center mb-3">
-                    <div class="">
-                      <div class="h6 mb-1">Thomas Halim</div>
-                      <div class="fs-sm text-body-secondary">Pengelola Gedung – Grand Metro Office Tower</div>
-                    </div>
-                  </div>
-                  <p class="card-text">Tim ini memahami benar pentingnya sistem keamanan terpadu. Mereka komunikatif, rapi dalam laporan, dan cepat dalam menanggapi situasi di lapangan.</p>
-                </div>
-              </div>
-              <div class="card border-0">
-                <div class="card-body">
-                  <div class="d-flex align-items-center mb-3">
-                    <div class="">
-                      <div class="h6 mb-1">Fajar Nugroho</div>
-                      <div class="fs-sm text-body-secondary">Event Organizer – Bali Eventworks</div>
-                    </div>
-                  </div>
-                  <p class="card-text">Setiap event yang kami selenggarakan selalu membutuhkan pengamanan khusus, dan tim ini tidak pernah mengecewakan. Profesional, tanggap, dan mampu beradaptasi dengan situasi acara.</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Item -->
-            <div class="swiper-slide">
-              <div class="card border-0 mb-4">
-                <div class="card-body">
-                  <div class="d-flex align-items-center mb-3">
-                    <div class="">
-                      <div class="h6 mb-1">Lestari Mahendra</div>
-                      <div class="fs-sm text-body-secondary">Direktur – CV Lestari Sejahtera</div>
-                    </div>
-                  </div>
-                  <p class="card-text">Kami sudah bekerjasama lebih dari 3 tahun. Konsistensi dalam pelayanan dan komitmen terhadap keamanan menjadi alasan utama kami terus mempercayakan layanan ini.</p>
-                </div>
-              </div>
-              <div class="card border-0">
-                <div class="card-body">
-                  <div class="d-flex align-items-center mb-3">
-                    <div class="">
-                      <div class="h6 mb-1">Maya Putri</div>
-                      <div class="fs-sm text-body-secondary">Manajer Operasional – Apartemen Griya Kencana</div>
-                    </div>
-                  </div>
-                  <p class="card-text">Tim keamanan mereka sangat proaktif dan selalu sigap dalam merespons laporan dari penghuni. Ini membuat kami tenang karena tahu ada pengawasan yang andal.</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Item -->
-            <div class="swiper-slide">
-              <div class="card border-0 mb-4">
-                <div class="card-body">
-                  <div class="d-flex align-items-center mb-3">
-                    <div class="">
-                      <div class="h6 mb-1">Rizky Aditya</div>
-                      <div class="fs-sm text-body-secondary">Supervisor Area – PT Global Logistic Express</div>
-                    </div>
-                  </div>
-                  <p class="card-text">Tim mereka memahami karakter lokasi kami yang berisiko tinggi. Dengan pendekatan yang sistematis dan kehadiran yang konsisten, mereka mampu menciptakan rasa aman bagi seluruh karyawan.</p>
-                </div>
-              </div>
-              <div class="card border-0">
-                <div class="card-body">
-                  <div class="d-flex align-items-center mb-3">
-                    <div class="">
-                      <div class="h6 mb-1">Dimas Wardana</div>
-                      <div class="fs-sm text-body-secondary">Kepala Operasional – GreenPark Convention Center</div>
-                    </div>
-                  </div>
-                  <p class="card-text">Kami sering mengadakan acara berskala besar dan memerlukan manajemen parkir yang efisien. Layanan mereka sangat membantu kelancaran acara dan tertibnya lalu lintas di area venue.</p>
-                </div>
+      <!-- Expertise steps -->
+      <div class="col-md-7 col-lg-6 col-xxl-5 offset-lg-1 offset-xxl-2">
+        <div class="ps-md-4 ps-lg-0">
+          <div class="position-relative d-flex justify-content-end my-3 py-1" data-aos="fade-left" data-aos-easing="ease-out-back">
+            <div class="btn btn-lg btn-icon btn-info fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y z-2 pe-none">01</div>
+            <div class="card border-0 ps-3" style="width: calc(100% - 1.75rem);">
+              <div class="card-body ps-4">
+                <h3 class="h5 card-title pb-2 mb-1">Detection Strategies</h3>
+                <p class="card-text">Mengembangkan dan memelihara strategi deteksi untuk meningkatkan efektivitas dalam menghadapi ancaman keamanan.</p>
               </div>
             </div>
           </div>
-
-          <!-- Pagination (bullets) -->
-          <div class="swiper-pagination position-relative bottom-0 mt-2 mt-md-3 mt-lg-4 pt-4"></div>
+          <div class="position-relative d-flex justify-content-end my-3 py-1" data-aos="fade-left" data-aos-easing="ease-out-back" data-aos-delay="250">
+            <div class="btn btn-lg btn-icon btn-info fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y z-2 pe-none">02</div>
+            <div class="card border-0 ps-3" style="width: calc(100% - 1.75rem);">
+              <div class="card-body ps-4">
+                <h3 class="h5 card-title pb-2 mb-1">Combat Missions</h3>
+                <p class="card-text">Berpengalaman dalam berbagai misi tempur di Irak, Yaman, Bosnia, dan Afghanistan dengan rekam jejak yang kuat.</p>
+              </div>
+            </div>
+          </div>
+          <div class="position-relative d-flex justify-content-end my-3 py-1" data-aos="fade-left" data-aos-easing="ease-out-back" data-aos-delay="500">
+            <div class="btn btn-lg btn-icon btn-info fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y z-2 pe-none">03</div>
+            <div class="card border-0 ps-3" style="width: calc(100% - 1.75rem);">
+              <div class="card-body ps-4">
+                <h3 class="h5 card-title pb-2 mb-1">Alert Analysis</h3>
+                <p class="card-text">Ahli dalam mengoordinasikan analisis peringatan dengan presisi tinggi untuk mendukung keputusan strategis.</p>
+              </div>
+            </div>
+          </div>
+          <div class="position-relative d-flex justify-content-end my-3 py-1" data-aos="fade-left" data-aos-easing="ease-out-back" data-aos-delay="700">
+            <div class="btn btn-lg btn-icon btn-info fs-xl fw-bold rounded-circle position-absolute top-50 start-0 translate-middle-y z-2 pe-none">04</div>
+            <div class="card border-0 ps-3" style="width: calc(100% - 1.75rem);">
+              <div class="card-body ps-4">
+                <h3 class="h5 card-title pb-2 mb-1">Digital Forensics & Risk Management</h3>
+                <p class="card-text">Memberikan dukungan tingkat senior untuk Forensik Digital, Respons Insiden, Ancaman Siber, Intelijen, dan Manajemen Risiko.</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+      
 
 
       
@@ -1087,9 +1170,7 @@
             <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body fs-sm">
-            <p>Dalam situasi darurat, setiap detik sangat berarti. Layanan Fast Response kami dirancang untuk merespons insiden secara instan, baik itu gangguan keamanan, perkelahian, pencurian, atau situasi mencurigakan lainnya. Tim kami dilatih untuk bersiaga 24/7 dan langsung menuju lokasi kejadian dengan peralatan lengkap serta pemahaman protokol keamanan yang tepat. Komitmen kami adalah memberikan tindakan preventif maupun represif dengan cepat dan efektif.</p>
-            <p>Kami menerapkan sistem pemantauan dan komunikasi real-time yang memungkinkan pelaporan langsung dari klien atau sistem otomatis. Dengan begitu, penanganan tidak tertunda dan tindakan bisa dilakukan bahkan sebelum situasi memburuk. Setiap unit kami terhubung langsung dengan pusat kendali yang memantau pergerakan dan efektivitas tim di lapangan, memastikan semua dijalankan sesuai SOP dan nilai profesionalisme tinggi.</p>
-            <p>Fast Response bukan hanya tentang kecepatan, tapi juga tentang rasa aman yang nyata. Banyak klien merasa lebih tenang mengetahui bahwa mereka memiliki tim siap siaga yang mampu bertindak dalam hitungan menit. Keamanan tidak seharusnya menunggu—karena ketenangan pikiran Anda adalah prioritas utama kami dalam setiap keadaan.</p>
+            <p>Unit tanggap darurat siap bertindak cepat kapan pun diperlukan, dengan kesiapan penuh untuk menghadapi berbagai potensi ancaman maupun keadaan darurat. Dirancang untuk menangani situasi kritis dengan presisi, ketangkasan, dan tindakan terukur, tim ini selalu dilengkapi dengan keterampilan serta peralatan yang sesuai standar profesional. Kecepatan dalam bertindak tidak pernah mengurangi ketepatan dalam pelaksanaan, sehingga setiap langkah tetap terarah dan efektif. Kehadiran unit ini memberikan jaminan bahwa keamanan selalu terkendali, menciptakan rasa tenang sekaligus kepercayaan bagi setiap klien bahwa situasi apa pun dapat ditangani dengan sigap, aman, dan terpercaya.</p>
           </div>
           <div class="modal-footer">
             <button class="btn btn-warning w-100 w-sm-auto mb-3 mb-sm-0" type="button" data-bs-dismiss="modal">Close</button>
@@ -1102,13 +1183,11 @@
       <div class="modal-dialog modal-dialog-scrollable" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title">Body Guard</h4>
+            <h4 class="modal-title">Bodyguard Profesional</h4>
             <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body fs-sm">
-            <p>Layanan Body Guard kami menyediakan perlindungan personal secara eksklusif, didesain khusus untuk individu yang memerlukan pengamanan ekstra dalam aktivitas sehari-hari maupun acara khusus. Kami memahami bahwa setiap klien memiliki kebutuhan yang berbeda, sehingga pendekatan kami selalu disesuaikan secara personal. Dari pengawalan jarak dekat hingga strategi keamanan tidak mencolok, kami siap menjaga Anda dengan tenang dan penuh keahlian.</p>
-            <p>Setiap body guard kami merupakan personel terlatih dengan latar belakang militer atau keamanan profesional, yang dibekali dengan pelatihan komunikasi, etika, dan respons cepat terhadap ancaman fisik. Mereka tidak hanya bertindak sebagai pelindung fisik, tetapi juga sebagai perencana strategi keamanan pribadi. Baik untuk perjalanan bisnis, kegiatan publik, atau situasi yang berpotensi berisiko, kehadiran body guard profesional membawa ketenangan ekstra.</p>
-            <p>Kami juga sangat menjunjung tinggi nilai privasi dan integritas. Tim kami mampu menjaga batas profesional dengan tetap ramah dan siaga dalam semua kondisi. Layanan ini cocok bagi publik figur, CEO, diplomat, dan siapa saja yang tidak bisa mengambil risiko terhadap keselamatan pribadi. Di era modern yang penuh tantangan, layanan pengamanan pribadi bukan lagi kemewahan—tetapi kebutuhan nyata.</p>
+            <p>Layanan keamanan pribadi dengan standar internasional hadir untuk memberikan perlindungan terbaik bagi individu, eksekutif, maupun tamu VIP dalam berbagai aktivitas dan perjalanan. Dengan keahlian khusus yang didukung pelatihan profesional, setiap anggota tim kami mengutamakan profesionalisme, kerahasiaan, serta kewaspadaan tinggi dalam setiap tindakan. Fokus utama kami adalah memastikan keselamatan dan kenyamanan Anda, baik dalam acara resmi, kegiatan bisnis, hingga momen pribadi. Dengan pendekatan yang terukur dan strategi yang disesuaikan, kami memberikan ketenangan pikiran di setiap langkah, situasi, dan perjalanan, sehingga Anda dapat beraktivitas dengan penuh keyakinan tanpa rasa khawatir.</p>
           </div>
           <div class="modal-footer">
             <button class="btn btn-warning w-100 w-sm-auto mb-3 mb-sm-0" type="button" data-bs-dismiss="modal">Close</button>
@@ -1125,9 +1204,7 @@
             <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body fs-sm">
-            <p>Mengelola kerumunan dalam skala besar memerlukan keahlian khusus. Layanan Crowd Control kami dirancang untuk menciptakan suasana yang aman, tertib, dan terkendali dalam event berskala kecil maupun besar. Kami memiliki pengalaman menangani acara seperti konser musik, pameran publik, kegiatan keagamaan, hingga demonstrasi dan kegiatan sosial yang melibatkan banyak orang. Setiap personel kami dilatih untuk menghadapi dinamika massa dengan tenang dan profesional.</p>
-            <p>Pengamanan dilakukan melalui pendekatan teknis dan psikologis, seperti pembagian zona pengunjung, penggunaan barikade, pemantauan CCTV, serta koordinasi dengan pihak keamanan lokal. Selain itu, kami juga menyiapkan skenario penanggulangan jika terjadi situasi darurat seperti kepanikan, bentrokan, atau evakuasi massal. Tim kami bekerja sama dengan panitia acara untuk menyusun strategi keamanan yang terukur namun fleksibel terhadap situasi di lapangan.</p>
-            <p>Crowd control yang baik bukan hanya menjaga keamanan fisik, tapi juga memberikan kenyamanan psikologis bagi pengunjung. Saat orang merasa aman, acara Anda berjalan lancar dan profesional. Dengan sistem pengendalian massa yang matang, kami bantu menjadikan setiap kegiatan Anda sukses tanpa kekacauan. Karena dalam keramaian, kestabilan adalah nilai utama yang harus dijaga.</p>
+            <p>Solusi pengendalian massa yang efektif, aman, dan terstruktur dirancang untuk menghadapi berbagai skala kegiatan, mulai dari acara publik, demonstrasi, hingga situasi kritis yang berpotensi menimbulkan kerumunan besar. Dengan pendekatan taktis yang humanis, tim kami mampu menjaga ketertiban tanpa menimbulkan kepanikan, sekaligus mencegah eskalasi potensi konflik sejak dini. Prosedur yang terukur serta koordinasi yang disiplin memastikan keselamatan orang, perlindungan aset, serta terjaganya citra dan reputasi penyelenggara. Dengan strategi ini, setiap situasi dapat dikendalikan secara profesional sehingga keamanan dan kenyamanan tetap menjadi prioritas utama.</p>
           </div>
           <div class="modal-footer">
             <button class="btn btn-warning w-100 w-sm-auto mb-3 mb-sm-0" type="button" data-bs-dismiss="modal">Close</button>
@@ -1140,13 +1217,11 @@
       <div class="modal-dialog modal-dialog-scrollable" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title">Ligitasi</h4>
+            <h4 class="modal-title">Litigation</h4>
             <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body fs-sm">
-            <p>Layanan Litigasi kami hadir sebagai solusi komprehensif untuk kebutuhan pengamanan dalam proses hukum yang seringkali kompleks, tegang, dan penuh risiko. Dalam situasi seperti persidangan terbuka, mediasi antar pihak, atau negosiasi hukum yang melibatkan kepentingan besar, keberadaan pengamanan yang profesional bukan hanya penting—namun vital. Kami memahami bahwa proses litigasi tidak hanya menyangkut aspek hukum, tetapi juga membawa dampak psikologis dan emosional bagi para pihak yang terlibat. Oleh karena itu, kami menyediakan perlindungan menyeluruh bagi individu, aset, maupun lingkungan yang terkait langsung dengan proses hukum tersebut, dengan tujuan utama menciptakan suasana aman, tertib, dan kondusif dari awal hingga akhir proses.</p>
-            <p>Tim kami bekerja secara sinergis dengan berbagai pihak seperti pengacara, firma hukum, lembaga peradilan, hingga aparat penegak hukum. Kolaborasi ini memungkinkan kami merancang dan menerapkan standar keamanan yang sesuai dengan peraturan perundang-undangan yang berlaku, tanpa mengganggu integritas hukum itu sendiri. Setiap personel kami telah dibekali pelatihan khusus mengenai dasar-dasar hukum, kode etik selama berada di lingkungan pengadilan, serta keterampilan komunikasi krisis untuk menghadapi kemungkinan eskalasi situasi. Fokus kami bukan pada intervensi, tetapi menjaga netralitas dan memastikan bahwa proses hukum berlangsung dalam suasana yang terkendali dan tidak terpengaruh oleh faktor eksternal.</p>
-            <p>Lebih dari sekadar penjagaan fisik, kehadiran layanan Litigasi kami memberikan rasa aman secara menyeluruh—termasuk stabilitas emosional dan psikologis bagi semua pihak yang terlibat. Dalam banyak kasus, klien merasa lebih tenang dan percaya diri ketika mengetahui bahwa situasi di sekitar mereka berada dalam pengawasan profesional yang penuh tanggung jawab. Hal ini sangat penting untuk memastikan bahwa proses pengambilan keputusan hukum dapat berlangsung secara objektif, adil, dan terbebas dari tekanan atau intimidasi dari pihak luar. Komitmen kami adalah menciptakan ruang hukum yang aman, netral, dan terhormat—sesuai dengan nilai-nilai keadilan yang dijunjung tinggi.</p>
+            <p>Membantu klien menyelesaikan permasalahan hukum secara efektif dan strategis merupakan komitmen utama kami. Dengan dukungan tim profesional berpengalaman, kami memberikan pendampingan menyeluruh dalam menghadapi berbagai jenis sengketa, baik di dalam maupun di luar pengadilan. Setiap langkah yang diambil dirancang dengan mempertimbangkan kepastian hukum, perlindungan kepentingan klien, serta keberlanjutan solusi jangka panjang. Kami menjunjung tinggi profesionalisme dan integritas, sehingga setiap klien mendapatkan rasa aman, kepercayaan penuh, dan keyakinan bahwa permasalahan hukumnya ditangani dengan standar terbaik.</p>
           </div>
           <div class="modal-footer">
             <button class="btn btn-warning w-100 w-sm-auto mb-3 mb-sm-0" type="button" data-bs-dismiss="modal">Close</button>
@@ -1163,9 +1238,7 @@
             <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body fs-sm">
-            <p>Layanan Investigasi kami dirancang untuk menjawab kebutuhan klien yang menghadapi situasi kompleks dan penuh risiko, di mana pengungkapan fakta menjadi kunci utama untuk pengambilan keputusan. Dalam dunia bisnis yang kompetitif dan dinamis, ancaman seperti kecurangan internal, pelanggaran etika, kebocoran informasi, hingga sabotase bisnis dapat merusak reputasi dan mengancam keberlangsungan usaha. Untuk itu, kami menghadirkan tim investigasi profesional yang terdiri dari mantan penyidik kepolisian, analis intelijen berpengalaman, serta ahli di bidang forensik digital dan audit internal. Mereka bekerja secara independen dan objektif demi menjamin integritas hasil penyelidikan.</p>
-            <p>Proses investigasi yang kami lakukan selalu mengedepankan prinsip kehati-hatian, kerahasiaan, serta kepatuhan hukum. Setiap kasus ditangani dengan metode yang terstruktur—dimulai dari pengumpulan data awal, observasi lapangan, wawancara mendalam, hingga analisis bukti digital dan dokumen internal. Kami juga menggunakan teknologi terkini seperti perangkat pemantauan digital, software forensik, dan teknik analitik berbasis data untuk mendeteksi pola atau indikasi penyimpangan. Semua temuan kami dikemas dalam laporan investigasi yang rinci, valid secara hukum, dan dapat digunakan sebagai dasar dalam tindakan hukum maupun pengambilan kebijakan internal.</p>
-            <p>Layanan ini sangat penting bagi perusahaan yang ingin menegakkan budaya kerja yang sehat, transparan, dan bebas dari perilaku tidak etis. Dengan hasil investigasi yang akurat dan dapat dipertanggungjawabkan, Anda tidak hanya dapat menghentikan potensi kerugian lebih besar, tetapi juga memperkuat sistem pengawasan internal dan membangun kembali kepercayaan di dalam organisasi. Dalam banyak kasus, investigasi yang dilakukan dengan tepat waktu dapat menyelamatkan perusahaan dari kerusakan reputasi dan kerugian finansial yang sulit dipulihkan. Komitmen kami adalah menjadi mitra kepercayaan Anda dalam menjaga integritas dan keberlangsungan bisnis di tengah tantangan yang terus berkembang.</p>
+            <p>Investigasi profesional kami dirancang untuk menemukan fakta secara tepat, objektif, dan dapat dipertanggungjawabkan. Dengan dukungan tim yang berpengalaman dalam berbagai bidang, kami mampu menangani kasus mulai dari kecurangan internal, pelanggaran regulasi, hingga isu-isu kompleks yang membutuhkan ketelitian tinggi. Setiap proses investigasi dilakukan dengan standar kerahasiaan yang ketat, metodologi yang terukur, serta dokumentasi yang jelas sesuai tanggung jawab hukum. Kami memastikan hasil investigasi tidak hanya menghadirkan kejelasan, tetapi juga memberikan dasar yang kuat bagi pengambilan keputusan strategis dan langkah hukum selanjutnya.</p>
           </div>
           <div class="modal-footer">
             <button class="btn btn-warning w-100 w-sm-auto mb-3 mb-sm-0" type="button" data-bs-dismiss="modal">Close</button>
@@ -1178,13 +1251,11 @@
       <div class="modal-dialog modal-dialog-scrollable" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title">Training</h4>
+            <h4 class="modal-title">Security Training & Development</h4>
             <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body fs-sm">
-            <p>Pelatihan Keamanan merupakan fondasi utama dalam membangun sistem perlindungan yang tangguh dan berkelanjutan, baik di lingkungan kerja, ruang publik, maupun kawasan vital lainnya. Melalui layanan Training kami, kami tidak hanya membekali peserta dengan pengetahuan teoritis, tetapi juga keterampilan praktis yang dirancang untuk meningkatkan kesiapsiagaan menghadapi berbagai skenario risiko. Program ini dirancang untuk personel keamanan profesional, staf internal perusahaan, hingga komunitas yang membutuhkan peningkatan kapasitas dalam menangani potensi ancaman. Kami percaya bahwa upaya pencegahan hanya akan efektif apabila semua pihak memahami perannya masing-masing dalam menjaga keselamatan bersama.</p>
-            <p>Materi pelatihan kami dirancang secara modular dan fleksibel, mencakup berbagai topik krusial seperti teknik evakuasi darurat, identifikasi dan penanganan ancaman fisik, komunikasi dalam situasi krisis, pertolongan pertama, hingga pengenalan sistem keamanan digital dan manajemen risiko. Kami juga menyediakan simulasi langsung dan role-play agar peserta dapat mengalami dan merespons kondisi seolah nyata—metode ini terbukti efektif dalam membentuk refleks dan keputusan cepat saat berada di bawah tekanan. Seluruh sesi dipandu oleh instruktur berpengalaman dari latar belakang militer, kepolisian, keamanan siber, dan psikologi krisis, sehingga pendekatannya menyeluruh dan relevan dengan kebutuhan lapangan.</p>
-            <p>Dengan mengikuti pelatihan ini, peserta akan mampu berpikir strategis, bertindak cepat, dan berkomunikasi efektif dalam situasi darurat. Lebih dari itu, mereka juga akan memahami pentingnya membangun budaya keamanan secara kolektif—bahwa menciptakan lingkungan yang aman bukan semata tanggung jawab petugas keamanan, melainkan juga keterlibatan aktif seluruh anggota organisasi atau komunitas. Layanan Training kami bertujuan untuk membentuk sumber daya manusia yang waspada, kompeten, dan mampu berperan sebagai garda terdepan dalam menghadapi berbagai tantangan keamanan masa kini.</p>
+            <p>Program pelatihan ini dirancang secara komprehensif untuk membentuk personel keamanan yang tangguh, profesional, dan siap menghadapi tantangan nyata. Setiap peserta tidak hanya dibekali keterampilan taktis dan teknis, tetapi juga kemampuan kepemimpinan manajerial yang penting dalam mengelola situasi di lapangan. Melalui kombinasi disiplin ketat, pembelajaran berbasis skenario, serta praktik langsung di berbagai kondisi, peserta dilatih untuk merespons ancaman dengan cepat, tepat, dan terukur. Tujuan utama dari program ini adalah mencetak tenaga keamanan yang tidak hanya kuat secara fisik, tetapi juga matang dalam pengambilan keputusan, berintegritas tinggi, serta mampu menjadi garda terdepan dalam menjaga keselamatan orang maupun aset.</p>
           </div>
           <div class="modal-footer">
             <button class="btn btn-warning w-100 w-sm-auto mb-3 mb-sm-0" type="button" data-bs-dismiss="modal">Close</button>
@@ -1197,13 +1268,11 @@
       <div class="modal-dialog modal-dialog-scrollable" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title">Debt Collector</h4>
+            <h4 class="modal-title">Professional Debt Collector</h4>
             <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body fs-sm">
-            <p>Layanan Debt Collector kami hadir sebagai solusi profesional bagi perusahaan maupun individu yang mengalami kesulitan dalam proses penagihan piutang. Dalam dunia bisnis yang terus bergerak cepat, keterlambatan pembayaran dapat menimbulkan dampak besar terhadap arus kas dan keberlangsungan usaha. Oleh karena itu, kami menawarkan layanan penagihan yang legal, beretika, dan mengedepankan pendekatan persuasif yang terukur. Fokus utama kami adalah menjaga agar proses penagihan berjalan lancar, manusiawi, dan tetap dalam koridor hukum—tanpa menimbulkan konflik yang dapat merusak hubungan jangka panjang antara kreditur dan debitur.</p>
-            <p>Setiap petugas penagihan kami dibekali pelatihan intensif mengenai teknik komunikasi interpersonal, psikologi negosiasi, serta pemahaman mendalam tentang aspek hukum yang mengatur hak dan kewajiban dalam proses penagihan utang. Kami memahami bahwa setiap kasus memiliki dinamika berbeda, sehingga pendekatan yang kami gunakan selalu disesuaikan dengan karakteristik debitur dan konteks hubungan bisnis yang ada. Dalam praktiknya, kami juga menyediakan dokumentasi lengkap dan laporan berkala mengenai progres penagihan, sehingga klien dapat memantau setiap langkah yang diambil secara transparan dan akuntabel.</p>
-            <p>Dengan mempercayakan penagihan kepada tim profesional kami, Anda dapat memulihkan piutang secara efektif tanpa merusak reputasi atau hubungan kerja sama yang telah terjalin. Banyak klien kami merasakan bahwa pendekatan kami mampu mempercepat proses pembayaran tanpa tekanan berlebihan, sekaligus menciptakan ruang dialog yang lebih sehat antara pihak terlibat. Pendekatan humanis ini tidak hanya mempercepat pencairan dana, tetapi juga memperkuat posisi Anda sebagai pihak yang tegas namun tetap menghargai nilai-nilai etika dan profesionalisme dalam berbisnis.</p>
+            <p>Layanan penagihan utang kami dijalankan dengan prinsip ketegasan, etika, serta kepatuhan penuh terhadap hukum yang berlaku. Setiap langkah dilakukan melalui prosedur resmi yang terstruktur, sehingga hak klien dapat dipulihkan secara sah dan terlindungi secara hukum. Kami juga menyeimbangkan pendekatan tegas dengan sikap humanis, menjaga komunikasi yang baik agar proses tetap bermartabat bagi semua pihak. Dengan dukungan tim profesional berpengalaman, kami membantu klien memperoleh kembali hak finansialnya secara efektif, aman, dan terpercaya. Fokus utama kami adalah memberikan hasil yang nyata tanpa mengorbankan integritas, kepercayaan, maupun reputasi klien.</p>
           </div>
           <div class="modal-footer">
             <button class="btn btn-warning w-100 w-sm-auto mb-3 mb-sm-0" type="button" data-bs-dismiss="modal">Close</button>
@@ -1216,13 +1285,11 @@
       <div class="modal-dialog modal-dialog-scrollable" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title">CCTV</h4>
+            <h4 class="modal-title">CCTV & Monitoring System</h4>
             <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body fs-sm">
-            <p>Sistem Pengawasan Video (CCTV) kini menjadi elemen krusial dalam strategi keamanan modern yang efektif. Melalui layanan ini, kami menyediakan solusi menyeluruh mulai dari perencanaan, pemasangan, hingga pemeliharaan sistem CCTV berbasis teknologi terkini. Kami menghadirkan berbagai jenis kamera dengan resolusi tinggi, sensor gerak cerdas, fitur penglihatan malam (infrared/night vision), hingga kemampuan integrasi dengan cloud storage untuk akses data yang aman dan fleksibel. Setiap sistem dirancang secara khusus untuk memenuhi kebutuhan spesifik lokasi—baik itu properti pribadi, area komersial, maupun lingkungan industri berskala besar.</p>
-            <p>Salah satu keunggulan utama layanan kami adalah kemampuan pemantauan real-time dari mana saja, kapan saja, langsung melalui perangkat seluler atau komputer klien. Sistem ini juga dilengkapi dengan fitur notifikasi otomatis yang akan mengirimkan peringatan jika terdeteksi aktivitas mencurigakan, memungkinkan respons cepat bahkan sebelum insiden berkembang lebih jauh. Dengan kontrol penuh atas area pengawasan, pengguna dapat mengambil keputusan keamanan secara proaktif dan tepat waktu. Selain itu, seluruh sistem dapat diatur untuk menyimpan rekaman secara otomatis dengan kualitas tinggi dan timestamp yang akurat, memudahkan pelacakan kejadian jika diperlukan di kemudian hari.</p>
-            <p>Kami juga menawarkan opsi integrasi CCTV dengan sistem keamanan lain seperti alarm, kontrol akses, dan sensor kebakaran, menciptakan sebuah ekosistem perlindungan yang terpadu dan responsif. Layanan purna jual kami mencakup pemeliharaan rutin, troubleshooting, serta dukungan teknis cepat tanggap jika terjadi gangguan atau kerusakan perangkat. Dengan pendekatan profesional dan solusi yang disesuaikan, kami memastikan bahwa klien kami tidak hanya mendapatkan sistem pengawasan, tetapi juga ketenangan pikiran. Sistem CCTV kami sangat cocok untuk perumahan, gedung perkantoran, pusat perbelanjaan, fasilitas publik, hingga kawasan industri yang membutuhkan keamanan tingkat tinggi dan berkesinambungan.</p>
+            <p>Layanan bantuan hukum kami dirancang untuk membantu klien menyelesaikan berbagai sengketa dengan pendekatan yang tepat, strategis, dan berlandaskan hukum. Proses investigasi dilakukan secara profesional guna mengungkap fakta dan bukti secara akurat, sehingga setiap langkah memiliki dasar yang kuat. Kami mendampingi klien dalam melindungi kepentingannya dengan cara yang sah, etis, dan penuh integritas. Dengan analisis yang transparan, objektif, serta dapat dipercaya, kami berkomitmen menghadirkan keadilan sekaligus memberikan kepastian hukum yang melindungi hak-hak klien secara menyeluruh.</p>
           </div>
           <div class="modal-footer">
             <button class="btn btn-warning w-100 w-sm-auto mb-3 mb-sm-0" type="button" data-bs-dismiss="modal">Close</button>
@@ -1235,13 +1302,11 @@
       <div class="modal-dialog modal-dialog-scrollable" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title">CCTV</h4>
+            <h4 class="modal-title">Voorijder</h4>
             <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body fs-sm">
-            <p>Layanan Voorrijder kami hadir untuk memberikan pengawalan dan pendampingan perjalanan yang aman, cepat, dan terkoordinasi dengan baik. Dirancang untuk individu atau rombongan yang memerlukan prioritas dan kelancaran di jalan—seperti pejabat, tamu VIP, delegasi bisnis, hingga iring-iringan acara penting—layanan ini memastikan perjalanan Anda terbebas dari hambatan lalu lintas serta risiko keamanan di sepanjang rute. Dengan dukungan personel terlatih dan kendaraan pengawalan khusus, kami memastikan setiap perjalanan berjalan tepat waktu dan dalam kondisi terkendali.</p>
-            <p>Setiap tim voorrijder kami terdiri dari pengemudi dan petugas pengawal berpengalaman yang memahami teknik mengatur lalu lintas, berkoordinasi dengan pihak kepolisian, serta mengantisipasi potensi gangguan di jalur perjalanan. Mereka dibekali keterampilan komunikasi lapangan yang cepat dan efektif, serta pengetahuan rute yang detail untuk memilih jalur tercepat dan teraman sesuai kondisi lalu lintas terkini. Selain itu, prosedur pengawalan kami mematuhi aturan dan etika berkendara sehingga tetap aman bagi pengguna jalan lain tanpa mengurangi efektivitas pengawalan.</p>
-            <p>Layanan ini sangat ideal untuk mendukung agenda penting yang membutuhkan ketepatan waktu, privasi, dan kenyamanan ekstra. Dengan sistem koordinasi yang terhubung langsung ke pusat kendali, kami dapat memantau posisi konvoi secara real-time dan menyesuaikan rute jika diperlukan. Layanan Voorrijder kami bukan sekadar pengawalan, melainkan solusi menyeluruh untuk memastikan perjalanan Anda berjalan lancar, aman, dan berkesan dari titik keberangkatan hingga tujuan akhir.</p>
+            <p>Layanan pengawalan kendaraan kami dirancang khusus untuk perjalanan VIP, eksekutif, maupun kebutuhan korporasi yang menuntut standar keamanan tinggi. Dengan tim profesional yang terlatih, setiap perjalanan dipastikan berlangsung aman, nyaman, serta terkoordinasi dengan baik dari awal hingga tujuan akhir. Pengawalan dilakukan secara taktis untuk mengurangi potensi risiko di jalan, menjaga kerahasiaan, sekaligus memastikan jadwal perjalanan tetap tepat waktu tanpa hambatan berarti. Dukungan personel berpengalaman serta sistem pemantauan modern menjadikan setiap mobilitas klien berlangsung dengan tenang dan terkendali. Kami menghadirkan ketenangan pikiran bagi mereka yang membutuhkan perlindungan ekstra dalam setiap langkah perjalanan pentingnya.</p>
           </div>
           <div class="modal-footer">
             <button class="btn btn-warning w-100 w-sm-auto mb-3 mb-sm-0" type="button" data-bs-dismiss="modal">Close</button>
@@ -1254,13 +1319,13 @@
       <div class="modal-dialog modal-dialog-scrollable" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title">RexParking</h4>
+            <h4 class="modal-title">RexParking – Solusi Parkir Modern & Premium</h4>
             <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body fs-sm">
-            <p>RexParking adalah solusi manajemen parkir modern yang dirancang untuk menghadirkan efisiensi, ketertiban, dan kenyamanan dalam pengelolaan lahan parkir, baik berskala kecil maupun besar. Sistem ini dikembangkan untuk memenuhi kebutuhan kompleks dari berbagai jenis fasilitas seperti gedung perkantoran, pusat perbelanjaan, rumah sakit, apartemen, hingga kawasan bisnis terpadu yang memiliki volume kendaraan tinggi. Dengan menggabungkan teknologi canggih dan rekayasa operasional yang presisi, RexParking menjadi pilihan tepat bagi pengelola yang ingin meningkatkan kualitas layanan parkir secara signifikan.</p>
-            <p>Kami mengimplementasikan sistem kontrol akses otomatis menggunakan gate barrier, sensor kendaraan, kamera ANPR (Automatic Number Plate Recognition), dan dashboard manajemen berbasis cloud yang dapat diakses secara real-time. Teknologi ini memungkinkan pengelola untuk memantau dan mengendalikan arus keluar-masuk kendaraan secara akurat, mengurangi antrean, serta mengoptimalkan kapasitas lahan parkir. Selain itu, RexParking juga mendukung berbagai metode pembayaran digital—seperti e-wallet, kartu debit, dan QR code—untuk memberikan kemudahan maksimal bagi pengguna dan mempercepat proses transaksi tanpa kontak fisik.</p>
-            <p>Lebih dari sekadar sistem parkir otomatis, RexParking memberikan nilai tambah melalui fitur analitik yang mampu menyajikan data-data penting seperti tingkat okupansi, waktu puncak kunjungan, durasi parkir, dan pola penggunaan lahan. Informasi ini sangat berguna sebagai dasar pengambilan keputusan strategis, evaluasi kinerja layanan, hingga perencanaan pengembangan area parkir di masa depan. Dengan pendekatan yang terintegrasi, RexParking tidak hanya meningkatkan efisiensi operasional dan transparansi pendapatan, tetapi juga menciptakan pengalaman pengguna yang lebih modern, profesional, dan terpercaya.</p>
+            <p>RexParking menghadirkan layanan pengelolaan parkir terpadu yang menggabungkan teknologi modern dengan standar pelayanan premium. Melalui Parking System cerdas, kami mengatur lalu lintas kendaraan secara efisien, memaksimalkan penggunaan ruang, serta memastikan keluar-masuk kendaraan berjalan aman, tertib, dan sesuai standar layanan modern. Sistem ini dilengkapi tiket otomatis, kontrol gerbang digital, dan software berbasis cloud yang dapat diterapkan di berbagai lokasi, mulai dari perkantoran, pusat perbelanjaan, apartemen, rumah sakit, hingga fasilitas publik berskala besar. Dengan fitur tambahan seperti Automatic Number Plate Recognition (ANPR), pemantauan kapasitas real-time, reservasi slot parkir berbasis aplikasi, hingga laporan keuangan terintegrasi, pengelolaan parkir menjadi lebih transparan, efisien, dan strategis.</P>
+              <p>Selain sistem modern, RexParking juga menghadirkan Valet Service yang memberikan pengalaman layanan premium dan berkelas. Layanan ini dirancang untuk meningkatkan kenyamanan serta citra lokasi Anda, cocok untuk hotel bintang lima, restoran mewah, pusat perbelanjaan premium, hingga event-event besar. Petugas valet kami dilatih secara profesional, mampu mengemudikan berbagai jenis kendaraan, serta menjunjung tinggi etika layanan, keamanan, dan sikap ramah dalam setiap interaksi. Didukung sistem manajemen kendaraan digital, proses penyerahan dan pengambilan kendaraan berlangsung cepat, aman, dan bebas antrian.</p>
+<p>Dengan menggabungkan teknologi parkir modern dan pelayanan valet eksklusif, RexParking menjadi solusi lengkap untuk pengelolaan mobilitas yang efisien, aman, dan berkelas tinggi—memberikan nilai tambah bagi pengelola maupun pengalaman terbaik bagi setiap pengguna.</p>
           </div>
           <div class="modal-footer">
             <button class="btn btn-warning w-100 w-sm-auto mb-3 mb-sm-0" type="button" data-bs-dismiss="modal">Close</button>
@@ -1315,16 +1380,15 @@
           <div class="col-md-7 col-lg-6 col-xxl-5 mb-sm-4 mb-md-0">
             <h2 class="display-4 mb-4 mb-md-5">Mari mulai wujudkan sistem keamanan dan parkir terbaik untuk bisnis Anda</h2>
             <div class="d-sm-flex align-items-center"><a class="btn btn-lg btn-primary me-sm-3 me-lg-4" href="https://wa.me/628170278686?text=Hello,%20I'm%20interested%20in%20your%20services.%20Could%20you%20share%20more%20details?">Let's work together</a>
-              <p class="text-body fs-sm py-3 py-sm-0 ps-sm-2 mb-0">Tim kami akan segera menghubungi Anda untuk mendiskusikan kebutuhan lapangan dan menyiapkan tim terbaik sesuai proyek Anda.</p>
+              <!-- <p class="text-body fs-sm py-3 py-sm-0 ps-sm-2 mb-0">Tim kami akan segera menghubungi Anda untuk mendiskusikan kebutuhan lapangan dan menyiapkan tim terbaik sesuai proyek Anda.</p> -->
             </div>
           </div>
           <div class="col-md-5 offset-lg-1 offset-xxl-2 d-flex flex-column">
             <div class="nav mx-n2 mx-lg-n4 mb-2 mb-sm-3">
               <a class="nav-link text-primary px-2 px-lg-4" href="mailto:example@email.com">Bais@thebravestrategy.com</a>
-              <a class="nav-link px-3 px-lg-4" href="#">Privay policy</a>
             </div>
             <div class="nav flex-column mb-3 mb-sm-4">
-              <a class="nav-link py-1 px-0">Jl. Perintis Kemerdekaan 1 No. 6 RT.005/RW.003, Kel. Babakan, Kec. Tangerang, Kota Tangerang, Banten 15118</a>
+              <a class="nav-link py-1 px-0">Tim kami akan segera menghubungi Anda untuk mendiskusikan kebutuhan lapangan dan menyiapkan tim terbaik sesuai proyek Anda.</a>
               <a class="nav-link py-1 px-0" href="tel:+628170278686">+628170278686</a>
             </div>
             <div class="nav mx-n2 mt-auto">
